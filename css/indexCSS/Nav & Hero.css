@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+header{
+    background-color: #C1FFF2;
+    height: 1024px;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu > ul{
+    display: flex;
+    gap:  30px;
+}
+.menu .navMenu > li{
+    list-style: none;
+}
+.navLink{
+    color: black;
+    text-decoration: none;
+}
+
+.landingPage{
+    display: grid;
+    grid-template-areas: 
+    'text hero'
+    ;
+    margin-top: 5%;
+}
+
+.bannerText{
+    margin-top: 75px;
+    grid-area: text;
+    width: 400px;
+    position: absolute;
+    z-index: 999;
+}
+.bannerText h1{
+    margin-bottom: 50px;
+}
+.btnSeeCourses{
+    margin-top: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: #6500CA;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btnSeeCourses:hover{
+    cursor: pointer;
+}
+/* text: Education */
+#text{
+    color: #026E64;
+}
+
+.heroBanner{
+    grid-area: hero;
+    position: absolute;
+    right: 2%;
+    z-index: 2;
+}
+.heroBanner > img{
+    width: 716px;
+    height: 718px;
+}
+
+/* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
+.vectors > img{
+    position: absolute;
+    z-index: 1;
+}
+#vec{
+    top: 59;
+    right: 0;
+}
+#vec1{
+    top: 706px;
+    right: 0;
+}
+#vec2{
+    top: 347px;
+}

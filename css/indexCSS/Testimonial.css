@@ -59,14 +59,14 @@ h2 {
     content: url('/assets/ci_double-quotes-l.svg');
     position: absolute;
     top: -15px;
-    left: -27px;
+    left: -15px;
 }
 
 .testament::before {
     content: url('/assets/2.svg');
     position: absolute;
     top: -15px;
-    right: -20px;
+    right: -15px;
 }
 
 .testament {

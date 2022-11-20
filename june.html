@@ -9,13 +9,16 @@
    <script src="https://kit.fontawesome.com/21f9873db8.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="/css/indexCSS/Testimonial.css">
    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+   <section style="height: 200vh;">a</section>
    <section class="testimonial">
-      <div class="testimonial-container">
-         <label class="tag-name">Testimonial</label>
-         <h2>What Parents Says About Us</h2>
+      <div class="testimonial-container" data-aos="fade-down">
+         <label   class="tag-name">Testimonial</label>
+         <h2  >What Parents Says About Us</h2>
 
          <div class="testimonial-carousel mySwiper">
 
@@ -62,9 +65,9 @@
 
    </section>
 
-   <footer>
-      <div class="footer-container">
-            <nav class="questions">
+   <footer >
+      <div class="footer-container ">
+            <nav class="questions"  data-aos="fade-down-right">
                <h3>Have a Questions?</h3>
                <ul class="questions-nav link-nav ">
                   <li><a href="#">203 Fake St. Mountain View, <br> San Francisco, California, USA</a></li>
@@ -73,7 +76,7 @@
                </ul>
             </nav>
 
-            <div class="instagram">
+            <div class="instagram"data-aos="fade-up" >
                <h3>Instagram</h3>
                <div class="cont-img">
                   <div class="img-grid">
@@ -86,7 +89,7 @@
                </div>
             </div>
 
-            <nav class="links">
+            <nav class="links" data-aos="fade-up">
                <h3>Links</h3>
                <ul class="link-nav links-quick ">
                   <li><a href="#">Home</a></li>
@@ -98,7 +101,7 @@
                </ul>
             </nav>
 
-            <div class="social-email">
+            <div class="social-email"  data-aos="fade-up-left">
                <div class="subscribe">
                   <h3>Subscribe Us!</h3>
                   <div>
@@ -125,8 +128,12 @@
       </div>
    </footer>
 
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="/swiper/swiper-bundle.min.js"></script>
    <script src="/js/index.js"></script>
+   <script>
+      AOS.init();
+   </script>
 </body>
 
 </html>

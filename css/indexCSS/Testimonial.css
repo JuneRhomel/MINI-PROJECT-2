@@ -7,6 +7,122 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
+
+.pricing {
+    text-align: center;
+    width: 75%;
+    color: #333333;
+    margin: 0 auto 6em auto;
+}
+
+.pricing h2 {
+    font-size: 2em;
+}
+
+.pricing p {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.prize-container {
+    width: 90%;
+    margin: 0 auto 6em auto;
+}
+
+.package {
+    /* display: inline-flex; */
+    /* gap: 2em; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* position: relative; */
+    display: block ruby;
+}
+
+.box-center {
+    /* position: absolute; */
+    right: 24em;
+    top: -35px;
+    /* height: 48em !important;
+    width: 28em !important; */
+    border: 3px solid #6500CA;
+}
+
+.package-box {
+    background-color: #C1FFF2;
+    width: 30em;
+    height: 43em;
+    padding: 1em 4em;
+    filter: drop-shadow(-5px 4px 18px rgba(0, 0, 0, 0.3));
+    border-radius: 25px;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100%; */
+}
+
+.package-box h3,
+p {
+    text-align: center;
+}
+
+.package-box h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: .7em;
+}
+
+.package-box p {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #6500CA;
+    line-height: 178.52%;
+}
+
+ul {
+    list-style: url("/assets/circle-check-regular.svg");
+    font-size: 1.2em;
+    line-height: 140.02%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.btn {
+    text-align: center;
+    justify-self: flex-end;
+}
+
+.btn button {
+    background-color: #6500CA;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    width: 10em;
+    font-size: 1.2em;
+    padding: .4em 0;
+    box-shadow: 2px 6px 8px rgba(101, 0, 202, 0.47);
+    border-radius: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h2 {
     color: #333333;
     font-size: 1.6em;
@@ -36,10 +152,12 @@ h2 {
 .swiper-wrapper {
     gap: 2em;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     display: none !important;
 }
+
 .testimonial-carousel {
     overflow: hidden;
     padding: 2em 1em;
@@ -117,6 +235,7 @@ h4 {
 footer {
     background-color: #026E64;
     padding: 5em 0;
+    overflow: hidden;
 }
 
 .footer-container {
@@ -247,25 +366,29 @@ footer h3 {
     background: #6500CA;
     box-shadow: 0px 8px 9px rgba(39, 0, 79, 0.84);
 }
+
 .social-email {
     display: flex;
     flex-direction: column;
     gap: 3em;
 }
+
 .subscribe {
     order: 1;
     /* text-align: center; */
 }
+
 .connect {
     order: 0;
     /* text-align: center; */
 }
+
 .connect a {
     font-size: 1.3em;
 }
 
 .socail {
-    
+
     flex-direction: row;
     /* justify-content: center; */
 }
@@ -290,51 +413,60 @@ footer h3 {
         gap: 0;
         max-width: 1500px;
     }
+
     .testimonial-container {
         max-width: 1500px;
     }
+
     .swiper-button-next,
     .swiper-button-prev {
         display: block !important;
     }
+
     .img-grid {
         width: 20em;
     }
+
     .links {
         order: 1;
     }
-    
+
     .questions {
         order: 0;
     }
-    
+
     .instagram {
         order: 2;
         text-align: start;
     }
-    
+
     .social-email {
         order: 5;
     }
-    .subscribe,.connect {
+
+    .subscribe,
+    .connect {
         text-align: start;
     }
+
     .subscribe {
         order: 0;
         /* text-align: center; */
     }
+
     .connect {
         order: 1;
         /* text-align: center; */
     }
 
 }
+
 @media only screen and (min-width: 950px) {
     .testament::after {
         top: -15px;
         left: -22px;
     }
-    
+
     .testament::before {
         top: -15px;
         right: -22px;

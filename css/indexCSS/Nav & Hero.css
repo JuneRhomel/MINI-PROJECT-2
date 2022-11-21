@@ -18,17 +18,30 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.menu > ul{
+.navMenu{
     display: flex;
     gap:  30px;
 }
-.menu .navMenu > li{
+.navList{
     list-style: none;
 }
 .navLink{
     color: black;
     text-decoration: none;
 }
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 
 .landingPage{
     display: grid;
@@ -43,7 +56,7 @@ nav{
     grid-area: text;
     width: 400px;
     position: absolute;
-    z-index: 999;
+    z-index: 4;
 }
 .bannerText h1{
     margin-bottom: 50px;
@@ -74,23 +87,77 @@ nav{
     z-index: 2;
 }
 .heroBanner > img{
-    width: 716px;
-    height: 718px;
+    width: 100%;
 }
 
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
+.vectors{
+    z-index: 1;
+}
 .vectors > img{
     position: absolute;
-    z-index: 1;
 }
 #vec{
     top: 59;
     right: 0;
+    width: 11%;
 }
 #vec1{
     top: 706px;
     right: 0;
+    width: 11%;
 }
 #vec2{
     top: 347px;
+    width: 24%;
 }
+
+@media only screen and (max-width: 900px){
+    nav{
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+    .bannerText{
+        width: 200px;
+    }
+    .heroBanner{
+        right: 1%;
+        left: 1%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .hamburger{
+        display: block;
+        position: absolute;
+        z-index: 10;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45045deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45045deg);
+    }
+    .navMenu{
+        position: absolute;
+        left: -1000px;
+        top: 0;
+        gap: 5px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        flex-direction: column;
+        background-color: #C1FFF2;
+        z-index: 9;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+}
+

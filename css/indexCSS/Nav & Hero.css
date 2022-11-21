@@ -160,7 +160,7 @@ nav > .wrapper{
         text-align: center;
         transition: 0.3s;
         flex-direction: column;
-        background-color: #C1FFF2;
+        background-color: #026E64;
         z-index: 9;
     }
     .navMenu.active{

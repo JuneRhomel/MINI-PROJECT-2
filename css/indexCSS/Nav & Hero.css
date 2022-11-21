@@ -13,6 +13,9 @@ header{
     height: 1024px;
 }
 nav{
+    background-color: #026E64;
+}
+nav > .wrapper{
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -98,18 +101,15 @@ nav{
     position: absolute;
 }
 #vec{
-    top: 59;
+    top: 59px;
     right: 0;
-    width: 11%;
 }
 #vec1{
     top: 706px;
     right: 0;
-    width: 11%;
 }
 #vec2{
     top: 347px;
-    width: 24%;
 }
 
 @media only screen and (max-width: 900px){
@@ -126,6 +126,13 @@ nav{
     .heroBanner{
         right: 1%;
         left: 1%;
+    }
+
+    #vec, #vec1{
+        width: 11%;
+    }
+    #vec2{
+        width: 24%;
     }
 }
 @media only screen and (max-width: 700px){

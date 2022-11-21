@@ -93,6 +93,32 @@ nav > .wrapper{
     width: 100%;
 }
 
+.info{
+    background-color: #8FF8B6;
+    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
+}
+.info > .wrapper{
+    display: grid;
+    grid-template-areas: 
+    'students graduates approval awards'
+    ;
+}
+.info > .wrapper div{
+    padding: 20px;
+}
+.students{
+    grid-area: students;
+}
+.graduates{
+    grid-area: graduates;
+}
+.approval{
+    grid-area: approval;
+}
+.awards{
+    grid-area: awards;
+}
+
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
 .vectors{
     z-index: 1;
@@ -113,6 +139,9 @@ nav > .wrapper{
 }
 
 @media only screen and (max-width: 900px){
+    header{
+        height: 750px;
+    }
     nav{
         justify-content: space-between;
     }
@@ -125,17 +154,25 @@ nav > .wrapper{
     }
     .heroBanner{
         right: 1%;
-        left: 1%;
+    }
+    .heroBanner > img{
+        margin-right: -300px;
     }
 
     #vec, #vec1{
         width: 11%;
+    }
+    #vec1{
+        top: 500px;
     }
     #vec2{
         width: 24%;
     }
 }
 @media only screen and (max-width: 700px){
+    header{
+        height: 650px;
+    }
     .hamburger{
         display: block;
         position: absolute;
@@ -165,6 +202,13 @@ nav > .wrapper{
     }
     .navMenu.active{
         left: 0;
+    }
+
+    .info > .wrapper{
+        grid-template-areas: 
+        'students graduates'
+        'approval awards'
+        ;
     }
 }
 

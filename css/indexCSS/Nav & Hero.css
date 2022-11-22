@@ -31,6 +31,7 @@ nav > .wrapper{
 }
 .navLink{
     text-decoration: none;
+    color: black;
 }
 .hamburger{
     display: none;
@@ -44,6 +45,10 @@ nav > .wrapper{
     transition: all 0.3s ease-in-out;
     background-color: black;
 }
+/* So the logo can be seen even after toggling the burger */
+.logo{
+    z-index: 1000;
+}
 
 .landingPage{
     display: grid;
@@ -53,7 +58,7 @@ nav > .wrapper{
     padding-top: 70px;
 }
 .bannerText{
-    z-index: 9999;
+    z-index: 10;
     padding-top: 180px;
     width: 400px;
 }
@@ -181,7 +186,7 @@ nav > .wrapper{
     .hamburger{
         display: block;
         position: absolute;
-        z-index: 10;
+        z-index: 100;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -197,13 +202,13 @@ nav > .wrapper{
         left: -1000px;
         top: 0;
         gap: 5px;
-        padding: 20px;
+        padding: 58px 0 20px;
         width: 100%;
         text-align: center;
         transition: 0.3s;
         flex-direction: column;
         background-color: #026E64;
-        z-index: 9;
+        z-index: 100;
     }
     .navMenu.active{
         left: 0;

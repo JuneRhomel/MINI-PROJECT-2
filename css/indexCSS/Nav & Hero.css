@@ -70,6 +70,7 @@ nav > .wrapper{
     background-color: #6500CA;
     color: white;
     border-radius: 30px;
+    border: none;
 }
 .btnSeeCourses:hover{
     cursor: pointer;

@@ -10,16 +10,25 @@ html {
   font-family: "Inter", sans-serif;
   color: #333333;
 }
-body {
+.learnAnything-container {
+  background: #c1fff2;
   font-size: 1.6rem;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
 }
 #learnAnything {
-  background: #c1fff2;
+  /* background: #c1fff2; */
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
   display: flex;
-  padding: 5vw 4vw 5vw 1vw;
+  /* padding: 5vw 4vw 5vw 1vw; */
+  padding: 2em 0;
 }
+/* svg path  {
+  fill: #6500ca;
+} */
+
 #learnAnythingImage {
   flex: 0 0 50%;
   max-width: 50%;

@@ -10,7 +10,7 @@
 }
 header{
     background-color: #C1FFF2;
-    height: 1024px;
+    height: 980px;
 }
 nav{
     background-color: #026E64;
@@ -45,53 +45,39 @@ nav > .wrapper{
     background-color: black;
 }
 
-
 .landingPage{
     display: grid;
-    grid-template-areas: 
-    'text hero'
-    ;
-    margin-top: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1224px;
+    margin: auto;
+    padding-top: 70px;
 }
-
 .bannerText{
-    margin-top: 75px;
-    grid-area: text;
+    z-index: 9999;
+    padding-top: 180px;
     width: 400px;
-    position: absolute;
-    z-index: 4;
 }
-.bannerText h1{
-    margin-bottom: 50px;
+.bannerText > h1{
+    padding-bottom: 20px;
+}
+#text{
+    color: #026E64;
 }
 .btnSeeCourses{
-    margin-top: 50px;
-    margin-right: 50px;
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 18px;
     background-color: #6500CA;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
+    border-radius: 30px;
 }
 .btnSeeCourses:hover{
     cursor: pointer;
 }
-/* text: Education */
-#text{
-    color: #026E64;
+.heroBanner{
+    grid-column-start: 3;
 }
 
-.heroBanner{
-    grid-area: hero;
-    position: absolute;
-    right: 5%;
-    z-index: 2;
-}
-.heroBanner > img{
-    width: 100%;
-}
 
 .info{
     background-color: #8FF8B6;
@@ -125,6 +111,7 @@ nav > .wrapper{
 }
 .vectors > img{
     position: absolute;
+    opacity: 0.8;
 }
 #vec{
     top: 59px;
@@ -137,7 +124,16 @@ nav > .wrapper{
 #vec2{
     top: 347px;
 }
-
+@media only screen and (max-width: 1300px){
+    .heroBanner{
+        position: absolute;
+        right: 50px;
+    }
+    .heroBanner > img{
+        height: 100%;
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 900px){
     header{
         height: 750px;
@@ -150,13 +146,12 @@ nav > .wrapper{
         width: 90%;
     }
     .bannerText{
+        padding-top: 50px;
         width: 200px;
     }
-    .heroBanner{
-        right: 1%;
-    }
     .heroBanner > img{
-        margin-right: -300px;
+        height: 601.67px;
+        width: 600px;
     }
 
     #vec, #vec1{
@@ -172,6 +167,10 @@ nav > .wrapper{
 @media only screen and (max-width: 700px){
     header{
         height: 650px;
+    }
+    .heroBanner > img{
+        height: 401.67px;
+        width: 400px;
     }
     .hamburger{
         display: block;

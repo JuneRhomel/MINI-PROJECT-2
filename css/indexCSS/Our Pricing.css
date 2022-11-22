@@ -95,6 +95,7 @@ ul {
 .btn {
     text-align: center;
     justify-self: flex-end;
+    width: 100%;
 }
 
 .btn button {
@@ -102,13 +103,19 @@ ul {
     border: none;
     color: #FFFFFF;
     font-weight: 700;
-    width: 10em;
+    width: 80%;
+    height: 3em;
     font-size: 1.2em;
     padding: .4em 0;
     box-shadow: 2px 6px 8px rgba(101, 0, 202, 0.47);
     border-radius: 14px;
 }
+.basic {
+    background-color: transparent !important;
+    border: 3px solid #6500CA !important;
+    color: #6500CA !important;
 
+}
 
 @media only screen and (min-width: 1075px) {
     .package {

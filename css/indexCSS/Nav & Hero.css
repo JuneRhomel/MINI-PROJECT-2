@@ -114,6 +114,84 @@ nav > .wrapper{
     grid-area: awards;
 }
 
+.info_offers{
+    background-color: #E4FFF9;
+}
+.courses{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.courses p{
+    color: #6500CA;
+    font-weight: bold;
+}
+.courses > p, .courses > h2{
+    text-align: center;
+}
+.see_more{
+    align-self: center;
+    margin-bottom: -20px;
+}
+.see_more button{
+    background-color: #6500CA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: larger;
+}
+.see_more button:hover{
+    cursor: pointer;
+}
+.offers{
+    padding-top: 50px;
+    display: grid;
+    /* 7 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20% 20% 20% 1fr;
+}
+.card{
+    border: 1px solid #026E64;
+    background-color: #C1FFF2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #026E64;
+}
+.card > h3, .card > h4, .card > h5{
+    margin: 15px 0;
+}
+.card button{
+    background-color: #6500CA;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 50px;
+}
+.card button:hover{
+    cursor: pointer;
+}
+.card:nth-child(1), .card:nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.card:nth-child(2), .card:nth-child(4){
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.card:nth-child(1){
+    grid-column: 1;
+}
+.card:nth-child(2){
+    grid-column: 3;
+}
+.card:nth-child(3){
+    grid-column: 5;
+}
+.card:nth-child(4){
+    grid-column: 7;
+}
+
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
 .vectors{
     z-index: 1;
@@ -141,6 +219,29 @@ nav > .wrapper{
     .heroBanner > img{
         height: 100%;
         width: 100%;
+    }
+    .see_more{
+        margin-top: 75px;
+    }
+
+    .offers{
+        grid-template-rows: 1fr 10% 1fr;
+    }
+    .card:nth-child(1){
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .card:nth-child(2){
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .card:nth-child(3){
+        grid-row: 1;
+        grid-column: 6;
+    }
+    .card:nth-child(4){
+        grid-row: 3;
+        grid-column: 6;
     }
 }
 @media only screen and (max-width: 900px){
@@ -171,6 +272,16 @@ nav > .wrapper{
     }
     #vec2{
         width: 24%;
+    }
+
+    .offers{
+        grid-template-rows: 1fr 1fr;
+    }
+    .card:nth-child(2){
+        grid-row: 2;
+    }
+    .card:nth-child(4){
+        grid-row: 2;
     }
 }
 @media only screen and (max-width: 800px){
@@ -233,11 +344,38 @@ nav > .wrapper{
     .heroBanner {
         right: 0;
     }
-}
-@media only screen and (max-width: 600px){
     .heroBanner > img{
         height: 301.67px;
         width: 300px;
+    }
+
+    .see_more{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .offers{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .card{
+        margin: 10px 0;
+    }
+    .card:nth-child(1){
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .card:nth-child(2){
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .card:nth-child(3){
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .card:nth-child(4){
+        grid-row: 4;
+        grid-column: 2;
     }
 }
 @media only screen and (max-width: 400px){

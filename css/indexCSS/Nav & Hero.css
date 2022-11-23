@@ -158,13 +158,6 @@ nav > .wrapper{
     border-radius: 10px;
     box-shadow: 0 0 3px #026E64;
 }
-.card:nth-child(4){
-    border: 1px solid #6500CA;
-    background-color: #C1FFF2;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 3px #6500CA;
-}
 .card > h3, .card > h4, .card > h5{
     margin: 15px 0;
 }
@@ -197,6 +190,11 @@ nav > .wrapper{
 }
 .card:nth-child(4){
     grid-column: 8;
+    border: 1px solid #6500CA;
+    background-color: #C1FFF2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #6500CA;
 }
 
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */

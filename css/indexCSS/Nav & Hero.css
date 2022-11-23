@@ -14,7 +14,10 @@ header{
     height: 980px;
 }
 nav{
+    position: fixed;
     background-color: #026E64;
+    width: 100%;
+    z-index: 10000;
 }
 nav > .wrapper{
     padding: 20px;

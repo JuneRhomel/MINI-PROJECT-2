@@ -35,13 +35,16 @@ html {
     url("/img/contactHeader.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  padding: 2rem;
 }
 #contactHeader strong {
   color: #6500ca;
   font-size: 3.7rem;
+  text-align: center;
 }
 #contactHeader p {
-  width: 74rem;
+  max-width: 74rem;
+  min-width: 10rem;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -52,7 +55,7 @@ html {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 7rem 1rem;
+  padding: 7.5rem 1rem 10rem;
 }
 #getInTouch h2 {
   text-transform: uppercase;
@@ -68,7 +71,8 @@ html {
   flex: 0 0 calc(100% / 3);
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 .getInTouchInfo {
   display: flex;
@@ -80,8 +84,8 @@ html {
   text-align: center;
 }
 .getInTouchIcon {
-  width: 97px;
-  height: 97px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   background: #0f7d7d;
   display: flex;
@@ -89,13 +93,33 @@ html {
   justify-content: center;
 }
 .getInTouchIcon i {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
 }
 .getInTouchIconName {
   font-weight: bolder;
   font-size: 2rem;
 }
+.getInTouchData {
+  height: 7rem;
+}
+.getInTouchData h3 {
+  text-align: center;
+  color: #026e64;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.getInTouchData p {
+  margin: 1.5rem auto;
+  font-size: 1.6rem;
+  width: 20rem;
+  text-align: center;
+  font-weight: 400;
+}
+#dataWeird {
+  width: auto;
+}
+
 .messageUs-container {
   background: #c1fff2;
   font-size: 1.6rem;
@@ -106,16 +130,51 @@ html {
   max-width: 1400px;
   margin: auto;
   display: flex;
-  padding: 2em 0;
+  padding: 7.5rem 1rem;
 }
 #messageUsText {
   flex: 0 0 50%;
   max-width: 50%;
   padding-right: 4em;
 }
+#messageUsText h2 {
+  font-size: 2.6rem;
+  color: #026e64;
+}
 #messageUsForm {
   flex: 0 0 50%;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#messageUsForm :is(input, textarea) {
+  width: 100%;
+  height: 3rem;
+  padding: 2rem 1rem;
+  margin-top: 0.8rem;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+#messageUsName {
+  display: flex;
+  gap: 1.5rem;
+}
+#messageUsForm textarea {
+  height: 20rem;
+  resize: none;
+}
+#messageUsForm button {
+  display: block;
+  width: 12rem;
+  height: 4rem;
+  margin-left: auto;
+  background: #6500ca;
+  box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1.6rem;
 }
 
 /*

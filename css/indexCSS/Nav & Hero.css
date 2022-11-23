@@ -202,11 +202,12 @@ nav > .wrapper{
     }
     .navMenu{
         position: absolute;
-        left: -1000px;
+        right: -1000px;
         top: 0;
         gap: 5px;
         padding: 58px 0 20px;
-        width: 100%;
+        width: 40%;
+        height: 100vh;
         text-align: center;
         transition: 0.3s;
         flex-direction: column;
@@ -214,7 +215,7 @@ nav > .wrapper{
         z-index: 100;
     }
     .navMenu.active{
-        left: 0;
+        right: 0;
     }
 
     .info > .wrapper{

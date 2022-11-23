@@ -10,9 +10,9 @@
 
 .pricing {
     text-align: center;
-    width: 75%;
     color: #333333;
     margin: 0 auto 6em auto;
+    
 }
 
 .pricing h2 {
@@ -22,6 +22,7 @@
 .pricing p {
     margin-top: 1em;
     font-size: 1.2em;
+    line-height: 178.52%;
 }
 
 .prize-container {
@@ -125,6 +126,9 @@ ul {
     }
     .package-box {
         max-width: 32em;
+    }
+    .pricing {
+        max-width: 40em;
     }
 }
 @media only screen and (min-width: 1670px) {

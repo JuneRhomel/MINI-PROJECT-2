@@ -13,6 +13,7 @@
     text-align: center;
     max-width: 25em;
     margin: auto;
+
 }
 .blog-head label {
     font-weight: 700;
@@ -20,6 +21,7 @@
     font-size: .9em;
 }
 .blog-head h2 {
+    margin-top: .7em;
     font-weight: 700;
     color: #333333;
     font-size: 1.3em;
@@ -71,12 +73,13 @@
     transition: .3s all;
 }
 .blog-flex {
+    margin-top: 2em;
     display: flex;
     overflow: auto;
     height: 30em; 
     gap: 2em;
 }
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 760px) {
     .blog-flex {
         overflow: visible;
         justify-content: center;
@@ -84,7 +87,7 @@
     }
     .blog-card {
 
-        width: 17em;
+        width: 20em;
         height: 30em;
 
     }

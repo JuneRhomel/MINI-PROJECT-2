@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #333333;
 }
 .wrapper{
@@ -152,24 +153,30 @@ nav > .wrapper{
     grid-template-rows: 1fr 20% 20% 20% 1fr;
 }
 .card{
-    border: 1px solid #026E64;
+    border: 3px solid #026E64;
     background-color: #C1FFF2;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 3px #026E64;
+    box-shadow: 0 0 5px #026E64;
 }
-.card > h3, .card > h4, .card > h5{
+.card > h3, .card > h5, .card > h6{
     margin: 15px 0;
 }
+.card > h3{
+    color: #026E64;
+}
 .card button{
-    background-color: #6500CA;
-    border: none;
+    background-color: transparent;
+    border: 3px solid #6500CA;
     border-radius: 10px;
-    color: white;
-    padding: 10px 50px;
+    color: #6500CA;
+    padding: 5px 50px;
 }
 .card button:hover{
     cursor: pointer;
+}
+.card button > p{
+    font-weight: 700;
 }
 .card:nth-child(1), .card:nth-child(3){
     grid-row-start: 1;
@@ -190,13 +197,21 @@ nav > .wrapper{
 }
 .card:nth-child(4){
     grid-column: 8;
-    border: 2px solid #6500CA;
+    border: 3px solid #6500CA;
     background-color: #C1FFF2;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 5px #6500CA;
 }
-
+.card:nth-child(4) button{
+    background-color: #6500CA;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 50px;
+}
+.card:nth-child(4) button > p{
+    color: white;
+}
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
 .vectors{
     z-index: 1;

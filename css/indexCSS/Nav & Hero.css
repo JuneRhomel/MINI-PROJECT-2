@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: #C1FFF2;
+    height: 980px;
+}
+nav{
+    position: fixed;
+    background-color: #026E64;
+    width: 100%;
+    z-index: 10000;
+}
+nav > .wrapper{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navMenu{
+    display: flex;
+    gap:  30px;
+}
+.navList{
+    list-style: none;
+}
+.navLink{
+    text-decoration: none;
+    color: black;
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+/* So the logo can be seen even after toggling the burger */
+.logo{
+    z-index: 1000;
+}
+
+.landingPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1224px;
+    margin: auto;
+    padding-top: 70px;
+}
+.bannerText{
+    z-index: 10;
+    padding-top: 180px;
+    width: 400px;
+}
+.bannerText > h1{
+    padding-bottom: 20px;
+}
+#text{
+    color: #026E64;
+}
+.btnSeeCourses{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #6500CA;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+.btnSeeCourses:hover{
+    cursor: pointer;
+}
+.heroBanner{
+    grid-column-start: 3;
+}
+
+
+.info{
+    background-color: #8FF8B6;
+    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
+}
+.info > .wrapper{
+    display: grid;
+    grid-template-areas: 
+    'students graduates approval awards'
+    ;
+}
+.info > .wrapper div{
+    padding: 2em 0;
+}
+.students{
+    grid-area: students;
+}
+.graduates{
+    grid-area: graduates;
+}
+.approval{
+    grid-area: approval;
+}
+.awards{
+    grid-area: awards;
+}
+
+.info_offers{
+    background-color: #E4FFF9;
+}
+.courses{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.courses p{
+    color: #6500CA;
+    font-weight: bold;
+}
+.courses > p, .courses > h2{
+    text-align: center;
+}
+.see_more{
+    align-self: center;
+    margin-bottom: -20px;
+}
+.see_more button{
+    background-color: #6500CA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: larger;
+}
+.see_more button:hover{
+    cursor: pointer;
+}
+.offers{
+    padding-top: 50px;
+    display: grid;
+    /* 7 columns */
+    grid-template-columns: 1fr 1fr 3% 1fr 3% 1fr 3% 1fr 1fr;
+    grid-template-rows: 1fr 20% 20% 20% 1fr;
+}
+.card{
+    border: 3px solid #026E64;
+    background-color: #C1FFF2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #026E64;
+}
+.card > h3, .card > h5, .card > h6{
+    margin: 15px 0;
+}
+.card > h3{
+    color: #026E64;
+}
+.card button{
+    background-color: transparent;
+    border: 3px solid #6500CA;
+    border-radius: 10px;
+    color: #6500CA;
+    padding: 5px 50px;
+}
+.card button:hover{
+    cursor: pointer;
+}
+.card button > p{
+    font-weight: 700;
+}
+.card:nth-child(1), .card:nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.card:nth-child(2), .card:nth-child(4){
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.card:nth-child(1){
+    grid-column: 2;
+}
+.card:nth-child(2){
+    grid-column: 4;
+}
+.card:nth-child(3){
+    grid-column: 6;
+}
+.card:nth-child(4){
+    grid-column: 8;
+    border: 3px solid #6500CA;
+    background-color: #C1FFF2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #6500CA;
+}
+.card:nth-child(4) button{
+    background-color: #6500CA;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 50px;
+}
+.card:nth-child(4) button > p{
+    color: white;
+}
+/* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
+.vectors{
+    z-index: 1;
+}
+.vectors > img{
+    position: absolute;
+    opacity: 0.8;
+}
+#vec{
+    top: 59px;
+    right: 0;
+}
+#vec1{
+    top: 706px;
+    right: 0;
+}
+#vec2{
+    top: 347px;
+}
+@media only screen and (max-width: 1300px){
+    .heroBanner{
+        position: absolute;
+        right: 50px;
+    }
+    .heroBanner > img{
+        height: 100%;
+        width: 100%;
+    }
+    .see_more{
+        margin-top: 75px;
+    }
+
+    .offers{
+        grid-template-rows: 1fr 10% 1fr;
+    }
+    .card:nth-child(1){
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .card:nth-child(2){
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .card:nth-child(3){
+        grid-row: 1;
+        grid-column: 8;
+    }
+    .card:nth-child(4){
+        grid-row: 3;
+        grid-column: 8;
+    }
+}
+@media only screen and (max-width: 900px){
+    header{
+        height: 750px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+    .bannerText{
+        padding-top: 50px;
+        width: 200px;
+    }
+    .heroBanner > img{
+        height: 601.67px;
+        width: 600px;
+    }
+
+    #vec, #vec1{
+        width: 11%;
+    }
+    #vec1{
+        top: 500px;
+    }
+    #vec2{
+        width: 24%;
+    }
+
+    .info_offers > .wrapper{
+        width: 100%;
+    }
+    .offers{
+        grid-template-rows: 1fr 1fr;
+    }
+    .card:nth-child(2){
+        grid-row: 2;
+    }
+    .card:nth-child(4){
+        grid-row: 2;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+        height: 700px;
+    }
+    .heroBanner > img{
+        height: 401.67px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 700px){
+    header{
+        height: 650px;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45045deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45045deg);
+    }
+    .navMenu{
+        position: absolute;
+        right: -1000px;
+        top: 0;
+        gap: 5px;
+        padding: 58px 0 20px;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        flex-direction: column;
+        background-color: #026E64;
+        z-index: 100;
+    }
+    .navMenu.active{
+        right: 0;
+    }
+
+    .info > .wrapper{
+        grid-template-areas: 
+        'students graduates'
+        'approval awards'
+        ;
+    }
+}
+@media only screen and (max-width: 600px){
+    .bannerText{
+        padding-top: 0;
+        width: 200px;
+    }
+    .heroBanner {
+        right: 0;
+    }
+    .heroBanner > img{
+        height: 301.67px;
+        width: 300px;
+    }
+
+    .see_more{
+        margin-top: 25px;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .offers{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .card{
+        margin: 10px 0;
+    }
+    .card:nth-child(1){
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .card:nth-child(2){
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .card:nth-child(3){
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .card:nth-child(4){
+        grid-row: 4;
+        grid-column: 2;
+    }
+}
+@media only screen and (max-width: 400px){
+    header{
+        height: 575px;
+    }
+    .heroBanner > img{
+        height: 201.67px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 300px){
+    .landingPage{
+        padding-top: 100px;
+    }
+    .heroBanner{
+        margin-top: -30px;
+    }
+
+    .info > .wrapper{
+        width: 95%;
+    }
+}

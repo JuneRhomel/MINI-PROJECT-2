@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #333333;
+}
+.contactHeader-container {
+  background-image: linear-gradient(
+    rgba(138, 248, 255, 0.71),
+    rgba(138, 248, 255, 0.71)
+  );
+  font-size: 1.6rem;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  padding-top: 8.5rem;
+}
+#contactHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 40rem;
+  background-image: linear-gradient(
+      rgba(138, 248, 255, 0.71),
+      rgba(138, 248, 255, 0.71)
+    ),
+    url("/img/contactHeader.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+}
+#contactHeader strong {
+  color: #6500ca;
+  font-size: 3.7rem;
+  text-align: center;
+}
+#contactHeader p {
+  max-width: 74rem;
+  min-width: 10rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.getInTouch-container {
+  background: #e3fff9;
+}
+#getInTouch {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 7.5rem 1rem 10rem;
+}
+#getInTouch h2 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #0f7d7d;
+  margin-bottom: 5rem;
+}
+#getInTouchFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+#getInTouchFlex article {
+  flex: 0 0 calc(100% / 3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.getInTouchInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.getInTouchIconName {
+  display: block;
+  text-align: center;
+}
+.getInTouchIcon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: #0f7d7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getInTouchIcon i {
+  font-size: 4rem;
+  color: #fff;
+}
+.getInTouchIconName {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.getInTouchData {
+  height: 7rem;
+  max-width: 30rem;
+}
+.getInTouchData h3 {
+  text-align: center;
+  color: #026e64;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.getInTouchData p {
+  margin: 1.5rem auto;
+  font-size: 1.6rem;
+  width: 20rem;
+  text-align: center;
+  font-weight: 400;
+}
+#dataWeird {
+  width: auto;
+}
+
+.messageUs-container {
+  background: #c1fff2;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+#messageUs {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  padding: 7.5rem 0;
+  gap: 3rem;
+}
+#messageUsText {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+#messageUsText h2 {
+  font-size: 2.6rem;
+  color: #026e64;
+  margin-bottom: 5rem;
+}
+#messageUsText p {
+  line-height: 189.52%;
+  max-width: 41.8rem;
+  font-size: 1.8rem;
+}
+#messageUsForm {
+  flex: 0 0 55%;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 4rem;
+}
+#messageUsForm :is(input, textarea) {
+  width: 100%;
+  height: 3rem;
+  padding: 2rem 1rem;
+  margin-top: 0.8rem;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+#messageUsName {
+  display: flex;
+  gap: 1.5rem;
+}
+#messageUsName label {
+  width: 100%;
+}
+#messageUsName input {
+  width: 100%;
+}
+#messageUsForm textarea {
+  height: 20rem;
+  resize: none;
+}
+#messageUsForm button {
+  display: block;
+  width: 12rem;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: 4rem;
+  background: #6500ca;
+  box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1.6rem;
+  border: none;
+}
+@media (max-width: 925px) {
+  #messageUs {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  #messageUsText,
+  #messageUsForm {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  #messageUsText h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  #messageUsText p {
+    max-width: 100%;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  #messageUsForm button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 534px) {
+  #messageUsName {
+    flex-direction: column;
+  }
+  #messageUsForm button {
+    margin-top: 1rem;
+    border-radius: 7px;
+  }
+}
+
+/*
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background-color: #C1FFF2;
+    height: 980px;
+}
+nav{
+    position: fixed;
+    background-color: #026E64;
+    width: 100%;
+    z-index: 10000;
+}
+nav > .wrapper{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navMenu{
+    display: flex;
+    gap:  30px;
+}
+.navList{
+    list-style: none;
+}
+.navLink{
+    text-decoration: none;
+    color: black;
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.logo{
+    z-index: 1000;
+}
+
+.landingPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1224px;
+    margin: auto;
+    padding-top: 70px;
+}
+.bannerText{
+    z-index: 10;
+    padding-top: 180px;
+    width: 400px;
+}
+.bannerText > h1{
+    padding-bottom: 20px;
+}
+#text{
+    color: #026E64;
+}
+.btnSeeCourses{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #6500CA;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+.btnSeeCourses:hover{
+    cursor: pointer;
+}
+.heroBanner{
+    grid-column-start: 3;
+}
+
+
+.info{
+    background-color: #8FF8B6;
+    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
+}
+.info > .wrapper{
+    display: grid;
+    grid-template-areas: 
+    'students graduates approval awards'
+    ;
+}
+.info > .wrapper div{
+    padding: 2em 0;
+}
+.students{
+    grid-area: students;
+}
+.graduates{
+    grid-area: graduates;
+}
+.approval{
+    grid-area: approval;
+}
+.awards{
+    grid-area: awards;
+}
+
+.vectors{
+    z-index: 1;
+}
+.vectors > img{
+    position: absolute;
+    opacity: 0.8;
+}
+#vec{
+    top: 59px;
+    right: 0;
+}
+#vec1{
+    top: 706px;
+    right: 0;
+}
+#vec2{
+    top: 347px;
+}
+@media only screen and (max-width: 1300px){
+    .heroBanner{
+        position: absolute;
+        right: 50px;
+    }
+    .heroBanner > img{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px){
+    header{
+        height: 750px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+    .bannerText{
+        padding-top: 50px;
+        width: 200px;
+    }
+    .heroBanner > img{
+        height: 601.67px;
+        width: 600px;
+    }
+
+    #vec, #vec1{
+        width: 11%;
+    }
+    #vec1{
+        top: 500px;
+    }
+    #vec2{
+        width: 24%;
+    }
+}
+@media only screen and (max-width: 800px){
+    header{
+        height: 700px;
+    }
+    .heroBanner > img{
+        height: 401.67px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 700px){
+    header{
+        height: 650px;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45045deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45045deg);
+    }
+    .navMenu{
+        position: absolute;
+        right: -1000px;
+        top: 0;
+        gap: 5px;
+        padding: 58px 0 20px;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        flex-direction: column;
+        background-color: #026E64;
+        z-index: 100;
+    }
+    .navMenu.active{
+        right: 0;
+    }
+
+    .info > .wrapper{
+        grid-template-areas: 
+        'students graduates'
+        'approval awards'
+        ;
+    }
+}
+@media only screen and (max-width: 600px){
+    .bannerText{
+        padding-top: 0;
+        width: 200px;
+    }
+    .heroBanner {
+        right: 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .heroBanner > img{
+        height: 301.67px;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 400px){
+    header{
+        height: 575px;
+    }
+    .heroBanner > img{
+        height: 201.67px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 300px){
+    .landingPage{
+        padding-top: 100px;
+    }
+    .heroBanner{
+        margin-top: -30px;
+    }
+
+    .info > .wrapper{
+        width: 95%;
+    }
+}
+*/

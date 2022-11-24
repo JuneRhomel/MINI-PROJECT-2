@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #333333;
+}
+.learnAnything-container {
+  background: #c1fff2;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+#learnAnything {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  padding: 2em 0;
+}
+#learnAnythingImage {
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#learnAnythingImage img {
+  width: 120%;
+  display: block;
+}
+#learnAnythingText {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: auto 0;
+}
+#learnAnythingText span {
+  color: #6500ca;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+#learnAnythingText h2 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  width: 37.6rem;
+  margin: 3rem 0 5rem;
+}
+.learnAnythingFeatures {
+  background: #e4fff9;
+  min-width: 10rem;
+  max-width: 60rem;
+  padding: 3rem 3rem 3rem 0;
+  margin-bottom: 3rem;
+  display: flex;
+  height: 19rem;
+  gap: 1rem;
+}
+.learnAnythingFeatures.three {
+  margin-bottom: 0;
+}
+.learnAnythingSVG {
+  flex: 0 0 25%;
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learnAnythingCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto 0;
+}
+.learnAnythingCard h3 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.learnAnythingCard p {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+@media (max-width: 925px) {
+  #learnAnything {
+    display: block;
+    padding: 6rem 5vw;
+  }
+  #learnAnythingImage img {
+    display: none;
+  }
+  #learnAnythingText {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #learnAnythingText span {
+    text-align: center;
+    display: block;
+  }
+  #learnAnythingText h2 {
+    margin: 3rem auto 5rem;
+    text-align: center;
+  }
+  .learnAnythingFeatures.one {
+    margin-left: auto;
+  }
+  .learnAnythingFeatures.two {
+    margin-right: auto;
+  }
+  .learnAnythingFeatures.three {
+    margin-left: auto;
+  }
+}
+@media (max-width: 534px) {
+  #learnAnythingText h2 {
+    width: 100%;
+  }
+  .learnAnythingFeatures {
+    padding: 3rem;
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .learnAnythingSVG {
+    flex: 0 0 10%;
+    max-width: 100%;
+  }
+  .learnAnythingCard h3 {
+    text-align: center;
+  }
+  .learnAnythingCard p {
+    text-align: center;
+  }
+}

@@ -6,6 +6,13 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+body {
+    scroll-snap-type:  y mandatory;
+}
+.about-banner,.teachers-section {
+    scroll-snap-align: center;
+}
+
 
 .teachers-container {
     width: 90%;
@@ -115,4 +122,37 @@ h2 {
     .main-teachers-flex {
         height: 80em;
     }
+}
+
+
+
+.about-banner {
+    height: 20em;
+    overflow: hidden;
+}
+h1 {
+    font-size: 3em;
+    color: #6500CA;
+}
+.about-banner img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    position: fixed;
+}
+.about-banner .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20em;
+    background: rgba(138, 248, 255, 0.71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teachers-section {
+    padding-top: 10em;
+    background-color: #ffffff;
 }

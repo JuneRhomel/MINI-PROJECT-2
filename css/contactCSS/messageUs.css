@@ -66,6 +66,7 @@ html {
 }
 #getInTouchFlex {
   display: flex;
+  flex-wrap: wrap;
 }
 #getInTouchFlex article {
   flex: 0 0 calc(100% / 3);
@@ -102,6 +103,7 @@ html {
 }
 .getInTouchData {
   height: 7rem;
+  max-width: 30rem;
 }
 .getInTouchData h3 {
   text-align: center;
@@ -130,23 +132,30 @@ html {
   max-width: 1400px;
   margin: auto;
   display: flex;
-  padding: 7.5rem 1rem;
+  padding: 7.5rem 0;
+  gap: 3rem;
 }
 #messageUsText {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 4em;
+  flex: 0 0 45%;
+  max-width: 45%;
 }
 #messageUsText h2 {
   font-size: 2.6rem;
   color: #026e64;
+  margin-bottom: 5rem;
+}
+#messageUsText p {
+  line-height: 189.52%;
+  max-width: 41.8rem;
+  font-size: 1.8rem;
 }
 #messageUsForm {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 55%;
+  max-width: 55%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding-right: 4rem;
 }
 #messageUsForm :is(input, textarea) {
   width: 100%;
@@ -161,6 +170,12 @@ html {
   display: flex;
   gap: 1.5rem;
 }
+#messageUsName label {
+  width: 100%;
+}
+#messageUsName input {
+  width: 100%;
+}
 #messageUsForm textarea {
   height: 20rem;
   resize: none;
@@ -170,11 +185,46 @@ html {
   width: 12rem;
   height: 4rem;
   margin-left: auto;
+  margin-right: 4rem;
   background: #6500ca;
   box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
   border-radius: 14px;
   color: #fff;
   font-size: 1.6rem;
+  border: none;
+}
+@media (max-width: 925px) {
+  #messageUs {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  #messageUsText,
+  #messageUsForm {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  #messageUsText h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  #messageUsText p {
+    max-width: 100%;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  #messageUsForm button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 534px) {
+  #messageUsName {
+    flex-direction: column;
+  }
+  #messageUsForm button {
+    margin-top: 1rem;
+    border-radius: 7px;
+  }
 }
 
 /*

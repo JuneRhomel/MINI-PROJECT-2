@@ -6,13 +6,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-body {
-    scroll-snap-type:  y mandatory;
-}
-.about-banner,.teachers-section {
-    scroll-snap-align: center;
-}
-
 
 .teachers-container {
     width: 90%;

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html {
+.learnAnything-section {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -11,6 +10,8 @@ html {
   color: #333333;
 }
 .learnAnything-container {
+  font-size: 62.5%;
+  overflow-x: hidden;
   background: #c1fff2;
   font-size: 1.6rem;
   margin: 0 auto;

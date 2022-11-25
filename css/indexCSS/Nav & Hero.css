@@ -23,6 +23,7 @@ header{
 }
 .main-nav{
     position: sticky;
+    top: 0;
     background-color: #026E64;
     width: 100%;
     z-index: 10000;
@@ -285,17 +286,10 @@ header{
         background: none;
         border: none;
     }
-    .navMenu li:hover a {
-        color: #C1FFF2 !important;
+    .navMenu li a {
+        color: #ffffff !important;
     }
 }
-
-
-
-
-
-
-
 @media only screen and (max-width: 800px){
     /* header{
         height: 650px;

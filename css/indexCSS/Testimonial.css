@@ -35,7 +35,9 @@ body {
 } */
 
 .testim {
-		width: 100%;
+    background-color: #C1FFF2;
+    padding: 3em 0;
+	width: 100%;
 		/* position: absolute; */
 		/* top: 50%; */
 		/* -webkit-transform: translatey(-50%);
@@ -71,7 +73,7 @@ body {
     -o-transition: all .3s ease-in-out;    
     transition: all .3s ease-in-out;
     padding: 5px;
-    z-index: 22222222;
+    z-index: 22;
 }
 
 .testim .arrow:before {

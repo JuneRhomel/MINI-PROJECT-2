@@ -8,6 +8,7 @@
 }
 .wrapper{
     width: 80%;
+    max-width: 1600px;
     margin: auto;
 }
 header{
@@ -21,10 +22,12 @@ nav{
     z-index: 10000;
 }
 nav > .wrapper{
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.menu{
+    padding: 25px 0;
 }
 .navMenu{
     display: flex;
@@ -52,6 +55,7 @@ nav > .wrapper{
 /* So the logo can be seen even after toggling the burger */
 .logo{
     z-index: 1000;
+    padding-top: 5px;
 }
 
 .landingPage{
@@ -123,7 +127,7 @@ nav > .wrapper{
     display: flex;
     flex-direction: column;
 }
-.courses p{
+.courses > p{
     color: #6500CA;
     font-weight: bold;
 }
@@ -148,6 +152,8 @@ nav > .wrapper{
 .offers{
     padding-top: 50px;
     display: grid;
+    max-width: 1224px;
+    margin: auto;
     /* 7 columns */
     grid-template-columns: 1fr 1fr 3% 1fr 3% 1fr 3% 1fr 1fr;
     grid-template-rows: 1fr 20% 20% 20% 1fr;
@@ -231,7 +237,8 @@ nav > .wrapper{
 #vec2{
     top: 347px;
 }
-@media only screen and (max-width: 1300px){
+
+@media only screen and (max-width: 1400px){
     .heroBanner{
         position: absolute;
         right: 50px;
@@ -264,12 +271,23 @@ nav > .wrapper{
         grid-column: 8;
     }
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
+    .logo{
+        padding: 15px;
+    }
+    .logo a > img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 920px){
     header{
         height: 750px;
     }
     nav{
         justify-content: space-between;
+    }
+    .logo a > img{
+        width: 180px;
     }
 
     .wrapper{
@@ -311,6 +329,18 @@ nav > .wrapper{
     header{
         height: 700px;
     }
+    nav .wrapper{
+        width: 93%;
+    }
+    .logo a > img{
+        width: 150px;
+    }
+    .menu{
+        padding: 20px 0;
+    }
+    .navMenu{
+        gap: 20px;
+    }
     .heroBanner > img{
         height: 401.67px;
         width: 400px;
@@ -323,6 +353,7 @@ nav > .wrapper{
     .hamburger{
         display: block;
         position: absolute;
+        right: 3%;
         z-index: 100;
     }
     .hamburger.active .bar:nth-child(2){
@@ -377,7 +408,7 @@ nav > .wrapper{
     }
     
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 540px){
     .offers{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -420,6 +451,6 @@ nav > .wrapper{
     }
 
     .info > .wrapper{
-        width: 95%;
+        width: 97%;
     }
 }

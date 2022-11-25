@@ -1,0 +1,132 @@
+.discover_teachers{
+    background-color: #C1FFF2;
+}
+.teachers{
+    padding: 50px 0;
+}
+.teachers > p{
+    color: #6500CA;
+    font-weight: bold;
+}
+.teachers > p, .teachers > h2{
+    text-align: center;
+}
+.gallery{
+    padding-top: 50px;
+    display: grid;
+    max-width: 1224px;
+    margin: auto;
+    grid-template-columns: 1fr 100px 1fr 100px 1fr;
+    grid-template-rows: 50px 455px 50px 455px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5px;
+}
+.socmed > ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 5px;
+}
+.socmed ul > li:nth-child(2){
+    padding-top: 4px;
+}
+
+.teacher_card:nth-child(1){
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.teacher_card:nth-child(2){
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.teacher_card:nth-child(3){
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.teacher_card:nth-child(4){
+    grid-column: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.teacher_card:nth-child(5){
+    grid-column: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.teacher_card:nth-child(6){
+    grid-column: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+@media only screen and (max-width: 1400px){
+    .gallery{
+        grid-template-columns: 1fr 100px 1fr;
+        grid-template-rows: 455px 100px 455px 100px 455px;
+    }
+    .teacher_card:nth-child(1), .teacher_card:nth-child(2), .teacher_card:nth-child(3){
+        grid-column: 1;
+    }
+    .teacher_card:nth-child(4), .teacher_card:nth-child(5), .teacher_card:nth-child(6){
+        grid-column: 3;
+    }
+    .teacher_card:nth-child(1), .teacher_card:nth-child(4){
+        grid-row: 1;
+    }
+    .teacher_card:nth-child(2), .teacher_card:nth-child(5){
+        grid-row: 3;
+    }
+    .teacher_card:nth-child(3), .teacher_card:nth-child(6){
+        grid-row: 5;
+    }
+}
+@media only screen and (max-width: 800px){
+    .gallery{
+        grid-template-columns: 1fr 50px 1fr;
+        grid-template-rows: 455px 75px 455px 75px 455px;
+    }
+    .discover_teachers > .wrapper{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .teacher_card .img > img{
+        height: 209px;
+        width: 206px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .gallery{
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-rows: 520px 520px 520px 520px 520px 520px;
+    }
+    .teacher_card:nth-child(1), .teacher_card:nth-child(2), .teacher_card:nth-child(3), 
+    .teacher_card:nth-child(4), .teacher_card:nth-child(5), .teacher_card:nth-child(6){
+        grid-column: 2;
+    }
+    .teacher_card:nth-child(1){
+        grid-row: 1;
+    }
+    .teacher_card:nth-child(2){
+        grid-row: 2;
+    }
+    .teacher_card:nth-child(3){
+        grid-row: 3;
+    }
+    .teacher_card:nth-child(4){
+        grid-row: 4;
+    }
+    .teacher_card:nth-child(5){
+        grid-row: 5;
+    }
+    .teacher_card:nth-child(6){
+        grid-row: 6;
+    }
+}

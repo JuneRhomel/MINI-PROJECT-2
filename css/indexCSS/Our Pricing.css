@@ -44,8 +44,7 @@
     /* position: relative; */
     /* overflow-x: auto; */
 }
-.prize-container {
-}
+
 .box-center {
     border: 3px solid #6500CA;
 }
@@ -66,8 +65,10 @@
     /* height: 100%; */
 }
 
-.package-box h3,
-p {
+.package-box h3 {
+    text-align: center;
+}
+.package-box p {
     text-align: center;
 }
 
@@ -84,7 +85,7 @@ p {
     line-height: 178.52%;
 }
 
-ul {
+.prize-container ul {
     list-style: url("/assets/circle-check-regular.svg");
     font-size: 1.2em;
     line-height: 140.02%;

@@ -38,6 +38,7 @@ body {
     background-color: #C1FFF2;
     padding: 3em 0;
 	width: 100%;
+    
 		/* position: absolute; */
 		/* top: 50%; */
 		/* -webkit-transform: translatey(-50%);
@@ -46,7 +47,11 @@ body {
 		-o-transform: translatey(-50%);
 		transform: translatey(-50%); */
 }
-
+@media only screen and (min-width: 950px) {
+    .testim {
+        height: 45em;
+    }
+}
 .testim .wrap {
     position: relative;
     width: 100%;

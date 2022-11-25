@@ -24,7 +24,7 @@ header{
 .main-nav{
     position: sticky;
     top: 0;
-    background-color: #026E64;
+    background-color: #C1FFF2;
     width: 100%;
     z-index: 10000;
 }
@@ -257,9 +257,12 @@ header{
         width: 24%;
     }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1100px) {
     .hamburger {
         display: none;
+    }
+    .wrapper {
+        width: 90%;
     }
     .navMenu {
         margin: 0;

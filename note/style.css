@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.note-section {
+    background-color: aquamarine;
+    width: 30em;
+    padding: 1em;
+    position: relative;
+}
+.note-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid blue;
+}
+.box-note {
+    background-color: bisque;
+}
+.add-new-note {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#body {
+    width: 100%;
+    overflow: visible;
+    border: none;
+}
+.text-input{
+    display: none;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    background-color: blanchedalmond;
+    padding: 1em;
+    top: 13px;
+    right: -302px;
+}
+
+.activeAdd {
+    display: block;
+}

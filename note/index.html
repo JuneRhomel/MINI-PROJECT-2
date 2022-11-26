@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/note/style.css">
+</head>
+<body>
+    <aside class="note-section">
+        <div class="note-head">
+            <h3>Note:</h3>
+            <div>
+                <button id="add-btn" class="add-new-note">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 2.90625C8.55588 2.90625 2.90625 8.55588 2.90625 15.5C2.90625 22.4441 8.55588 28.0938 15.5 28.0938C22.4441 28.0938 28.0938 22.4441 28.0938 15.5C28.0938 8.55588 22.4441 2.90625 15.5 2.90625ZM21.3125 16.4688H16.4688V21.3125H14.5312V16.4688H9.6875V14.5312H14.5312V9.6875H16.4688V14.5312H21.3125V16.4688Z" fill="#6500CA"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="main-add" class="text-input">
+            <form action="#" method="post">
+            <textarea id="head" name="note"></textarea>
+            <textarea id="body" name="note"></textarea>
+            <div><button type="submit" id="save">Save</button></div>
+            </form>
+        </div>
+        <div class="text-note">
+            <div class="box-note">
+                <h4 id="headSaved" class="title">My Note</h4>
+                <p id="bodySaved">Lorem, ipsum.</p>
+                <div class="date">
+                    <label>June 29 2020</label>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="/note/js.js"></script>
+</body>
+</html>

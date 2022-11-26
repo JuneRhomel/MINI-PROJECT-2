@@ -7,6 +7,10 @@ const logotext = document.querySelector(".logotext")
 const spanText = document.querySelector(".span-text")
 const navLink = document.querySelectorAll(".navLink")
 
+
+const hoverNav = document.querySelectorAll('.navMenu li');
+
+
 console.log(navLink)
 window.addEventListener("scroll", () => {
     // console.log(window.scrollY)
@@ -27,6 +31,9 @@ window.addEventListener("scroll", () => {
         navLink.forEach((item)=> {
             item.classList.add("asd")
         });
+        hoverNav.forEach((navItem)=> {
+            navItem.style.setProperty("border-bottom: 3px solid #026e63","border-bottom: 3px solid #F51313" )
+        })
     }
 
     if (window.scrollY > 0 && window.scrollY <= 412) {

@@ -326,9 +326,12 @@ header{
         padding: 0;
         flex-direction: row;
         transform: none;
+        gap: 2em;
     }
     .navMenu li {
         width: auto;
+        padding: 0;
+        border-bottom: 3px solid transparent 
     }
     .main-nav .wrapper {
         align-items: center;
@@ -338,7 +341,9 @@ header{
     }
     .navMenu li:hover {
         background: none;
-        border: none;
+        border-left: none;
+        border-bottom: 3px solid #026e63 ;
+        transition: .3s all;
     }
     .navMenu li a {
         font-size: 1em !important;

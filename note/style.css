@@ -19,6 +19,11 @@
 .box-note {
     background-color: bisque;
 }
+.text-note {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .8em;
+}
 .add-new-note {
     background: none;
     border: none;

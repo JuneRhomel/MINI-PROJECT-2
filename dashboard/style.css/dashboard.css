@@ -10,11 +10,11 @@
 .video-course .vid-box {
     width: 100%;
 }
-.video-course .vid-box img {
+.vid-box iframe {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: 30em;
 }
+
 .video-course {
     background-color: #E3FFF9;
     padding: 1em;
@@ -75,7 +75,6 @@
 .main-lesson {
     display: flex;
     flex-direction: column;
-    gap: 1em;
     margin: 1em 0;
 }
 .cardActive {
@@ -101,10 +100,10 @@
         justify-content: center;
     }
     .video-course{
-        width: 100%;
+        height: 100%;
+        width: 55em;
     }
     aside {
-        width: 50%;
-        max-width: 30em;
+        width: 40em;
     } 
 }

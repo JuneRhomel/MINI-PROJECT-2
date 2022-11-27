@@ -7,7 +7,6 @@
     font-family: 'Inter', sans-serif;
     color: #333333;
     scroll-behavior: smooth;
-    list-style: none;
     text-decoration: none;
 }
 body {
@@ -154,6 +153,7 @@ header{
 .navMenu li:hover a  {
     color: #6500CA !important;
 }
+
 
 .hamburger{
     display: block;
@@ -348,6 +348,11 @@ header{
     .navMenu li a {
         font-size: 1em !important;
     }
+    .active-nav {
+        border-bottom: 3px solid #026e63 !important;
+        
+    }
+
 }
 @media only screen and (max-width: 800px){
     /* header{

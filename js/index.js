@@ -9,7 +9,7 @@ const navLink = document.querySelectorAll(".navLink")
 
 
 const hoverNav = document.querySelectorAll('.navMenu li');
-
+const active_nav  = document.querySelector(".active-nav")
 
 console.log(navLink)
 window.addEventListener("scroll", () => {
@@ -22,6 +22,8 @@ window.addEventListener("scroll", () => {
         spanText.classList.add("main-nav-scroll-text")
 
         other.classList.add("diff")
+
+        active_nav.style.borderBottom = "thick solid #000000 !important" 
         layer.forEach((item)=> {
             item.classList.add('layer2')
         });
@@ -34,6 +36,7 @@ window.addEventListener("scroll", () => {
         hoverNav.forEach((navItem)=> {
             navItem.style.setProperty("border-bottom: 3px solid #026e63","border-bottom: 3px solid #F51313" )
         })
+        
     }
 
     if (window.scrollY > 0 && window.scrollY <= 412) {
@@ -48,6 +51,7 @@ window.addEventListener("scroll", () => {
         navLink.forEach((item)=> {
             item.classList.remove("asd")
         });
+        active_nav.style.borderBottom = "thick solid #000000 !important" 
     }
 
     if (window.scrollY >= 7227) {
@@ -62,5 +66,6 @@ window.addEventListener("scroll", () => {
         navLink.forEach((item)=> {
             item.classList.remove("asd")
         });
+        active_nav.style.borderBottom = "thick solid #000000 !important" 
     }
 })

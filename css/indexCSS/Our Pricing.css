@@ -86,7 +86,7 @@
 }
 
 .prize-container ul {
-    list-style: url("/assets/circle-check-regular.svg");
+    list-style: url("/assets/circle-check-regular.svg") !important;
     font-size: 1.2em;
     line-height: 140.02%;
     display: flex;

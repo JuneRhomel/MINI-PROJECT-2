@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #333333;
+  transition: .3s ease-in-out;
 }
 .learnAnything-container {
   font-size: 62.5%;

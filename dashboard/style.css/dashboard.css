@@ -2,154 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
-.navigation {
-    background-color: #026E64;
-    /* width: 5em; */
-    width: 100%;
-    height: 3.8em;
-    transition: .3s all;
-    /* height: 5em; */
-    /* position: fixed; */
-    top: 0;
-    /* bottom: 0; */
-
-}
-.navbar-container {
-    height: 100%;
-}
-.menu-nav {
-    display: flex;
-    /* flex-direction: column; */
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100%;
-    transition: .3s all;
-}
-.menu-nav .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s all;
-}
-.menu-nav .menu li {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6em;
-    margin: 0 1em;
-}
-.navbar-container nav {
-    /* position: relative; */
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    flex-direction: row;
-    align-items: center;
-    transition: .3s all;
-}
-.active {
-    transform: translateX(0) !important; 
-    transition: .3s all;
-}
-.navbar-container .top-nav {
-    transform: translateX(-100%);
-    background-color: #026E64;
-    position: absolute;
-    top: 60px;
-    display: flex; 
-    flex-direction: column;
-    /* flex-direction: row; */
-    align-items: center;
-    font-size: 1.6em;
-    /* width: 100%; */
-    width: 60%;
-    height: 100vh;
-    transition: .3s all;
-}
-.navbar-container .bottom-nav {
-    /* display: none; */
-}
-.top-nav li {
-    width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    padding: .9em 1em;
-}
-.top-nav li a {
-    color: #ffffff;
-    display: flex;
-    gap: 1.2em;
-    
-}
-.top-nav li:hover {
-    background-color: #C1FFF2;
-    width: 100%;
-}
-.top-nav li:hover a {
-    color: #6500CA;
-}
-
-@media only screen and (min-width: 768px) {
-    .navbar-container .top-nav {
-        /* flex-direction: row; */
-        position: block;
-        transform: translateX(0);
-        width: 80px;
-        height: 100vh;
-        overflow: hidden;
-    }
-    .activeNavPc {
-        width: 40% !important; 
-    }
-    .navigation {
-        width: 5em;
-    }
-    .activeMenuPc {
-        width: 40% !important; 
-    }
-}
-.main-course {
+.main-container {
     width: 95%;
     margin: auto;
 }
-main {
-    margin: 2em 0;
+.video-course .vid-box {
+    width: 100%;
 }
-.vid img {
+.video-course .vid-box img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-aside {
-    background-color: #C1FFF2;
-    width: 100%;
-    height: 80vh;
+.video-course {
+    background-color: #E3FFF9;
+    padding: 1em;
+    border: 3px solid #026E64;
 }
-@media only screen and (min-width: 768px) {
-    .main-course {
-        width: 80%;
-        margin: 0 2em 0 auto;
-    }
+.description {
+    padding: 1em;
+    margin-top: 2em;
+    background: rgba(127, 229, 218, 0.44);
 }
-@media only screen and (min-width: 1080px) {
-    .main-course {
+.description h3 {
+    font-size: 1.2em;
+}
+.description p {
+    margin-top: 1em;
+    font-size: 1em;
+    line-height: 175.02%;
+}
+
+.lesson {
+    height: 100%;
+    background-color: #E3FFF9;
+    border: 3px solid #026E64;
+}
+.aside-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    border-bottom: 10px solid #026E64;
+}
+.text-course {
+    width: 80%;
+}
+.card-course {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 196, 177, 0.13);
+}
+.play {
+    width: 20%;
+    font-size: 2.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-lesson p {
+    font-size: .9em;
+    line-height: 175.02%;
+}
+.main-lesson h4 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.main-lesson {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0;
+}
+.cardActive {
+    background: rgba(0, 196, 177, 0.44);
+}
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.main-course {
+    margin-top: 1em;
+}
+.main-lesson {
+    cursor: pointer;
+}
+@media only screen and (min-width: 1310px) {
+    .main-container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
+        flex-direction: row;
         gap: 1em;
-        margin-left: 6em;
-        margin-right: auto;
-        
+        justify-content: center;
+    }
+    .video-course{
+        width: 100%;
     }
     aside {
-        max-width: 20em;
-    }
+        width: 50%;
+        max-width: 30em;
+    } 
 }

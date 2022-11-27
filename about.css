@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* section css */
+#sec1 {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(213, 255, 226);
+    /* background: linear-gradient(180deg, rgb(165, 227, 185) 0%, rgba(184,244,162,1) 50%, rgba(168,227,211,1) 100%); */
+}
+#sec2 {
+    height: 20vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+#sec3 {
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+}
+/* text css */
+#text1 {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+}
+#text3 {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+}
+/* team css */
+#team1 {
+    height: 300px;
+    width: 300px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 130px;
+}
+#img2 {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}

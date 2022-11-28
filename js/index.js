@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
             color2.classList.add('layer')
         });
         navLink.forEach((item)=> {
-            item.classList.add("asd")
+            item.classList.add("active-nav-a")
         });
         hoverNav.forEach((navItem)=> {
             navItem.style.setProperty("border-bottom: 3px solid #026e63","border-bottom: 3px solid #F51313" )
@@ -51,7 +51,9 @@ window.addEventListener("scroll", () => {
         navLink.forEach((item)=> {
             item.classList.remove("asd")
         });
-        active_nav.style.borderBottom = "thick solid #000000 !important" 
+        navLink.forEach((item)=> {
+            item.classList.remove("active-nav-a")
+        });
     }
 
     if (window.scrollY >= 7227) {
@@ -66,6 +68,8 @@ window.addEventListener("scroll", () => {
         navLink.forEach((item)=> {
             item.classList.remove("asd")
         });
-        active_nav.style.borderBottom = "thick solid #000000 !important" 
+        navLink.forEach((item)=> {
+            item.classList.remove("active-nav-a")
+        });
     }
 })

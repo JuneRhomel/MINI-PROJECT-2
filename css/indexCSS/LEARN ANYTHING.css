@@ -11,7 +11,7 @@
 .learnAnything-container {
   font-size: 62.5%;
   overflow-x: hidden;
-  background: #c1fff2;
+  background: #BDF7FF;
   font-size: 1.6rem;
   margin: 4em auto;
 }
@@ -40,7 +40,7 @@
   margin: auto 0;
 }
 #learnAnythingText span {
-  color: #6500ca;
+  color: #FC7900;
   font-weight: 700;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
   transition: .3s ease-in-out;
 }
 .learnAnythingFeatures:hover {
-  background-color: #6500ca;
+  background-color: #FC7900;
   transition: .3s all;
 } 
 .learnAnythingFeatures:hover h3 {
@@ -94,7 +94,7 @@
 .learnAnythingCard h3 {
   font-weight: 700;
   font-size: 1.7rem;
-  color: #026E64;
+  color: #284265;
 }
 .learnAnythingCard p {
   font-weight: 400;

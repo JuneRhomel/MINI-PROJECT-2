@@ -18,7 +18,7 @@ body {
     height: 100%;
 }
 header{
-    background-color: #C1FFF2;
+    background-color: #BDF7FF;
     height: 100vh;
     min-height: 500px;
     position: relative;
@@ -26,13 +26,13 @@ header{
 .main-nav{
     position: sticky;
     top: 0;
-    background-color: #C1FFF2;
+    background-color: #BDF7FF;
     width: 100%;
     z-index: 10000;
     transition: .3s all;
 }
 .nav-bg {
-    background-color: #026E64 !important;
+    background-color: #284265 !important;
 }
 .main-nav > .wrapper{
     padding: .5em 0;
@@ -54,7 +54,7 @@ header{
 }
 .logotext span {
     font-family: 'Koulen', cursive;
-    color: #6500CA;
+    color: #FC7900;
     transition: .3s all;;
 }
 .logotext-scroll {
@@ -62,23 +62,23 @@ header{
     transition: .3s all;
 }
 .main-nav-scroll-text {
-    color: #6DF8A6 !important;
+    color: #FC7900 !important;
     transition: .3s all;
 }
 .main-nav-scroll {
-    background-color: #026E64;
+    background-color: #284265;
 }
 
 .layer {
-    fill: #026E64;
+    fill: #284265;
     transition: .3s all;
 }
 .layer2 {
-    fill: #C1FFF2;
+    fill: #BDF7FF;
     transition: .3s all;
 }
 .diff {
-    fill: #026E64 !important;
+    fill: #284265 !important;
     transition: .3s all;
 }
 
@@ -134,7 +134,7 @@ header{
     margin-top: 2em;
     text-align: start;
     flex-direction: column;
-    background-color: #026e63;
+    background-color: #284265;
     z-index: -1;
     transition: .3s ease-in-out;
 }
@@ -145,13 +145,13 @@ header{
     padding: 1.2em 1em;
 }
 .navMenu li:hover {
-    border-left: 10px solid #6500CA;
-    background-color: #C1FFF2;
+    border-left: 10px solid #FC7900;
+    background-color: #BDF7FF;
     transition: .3s all;
     
 }
 .navMenu li:hover a  {
-    color: #6500CA !important;
+    color: #FC7900 !important;
 }
 
 
@@ -205,14 +205,14 @@ header{
     font-size: 1.3em;
 }
 #text{
-    color: #026E64;
+    color: #284265;
 }
 .btnSeeCourses{
     margin-top: 2em;
     width: 10em;
     padding: .7em 0;
     font-size: 1.1em;
-    background-color: #6500CA;
+    background-color: #FC7900;
     color: white;
     border-radius: 10px;
     border: none;
@@ -236,7 +236,7 @@ header{
 
 .info{
     background-color: #8FF8B6;
-    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
+    background-color: #284265;
 }
 .info > .wrapper{
     display: grid;
@@ -251,6 +251,10 @@ header{
 .students{
     grid-area: students;
 }
+.info_offers p{
+    color: #ffffff;
+}
+
 .graduates{
     grid-area: graduates;
 }
@@ -264,8 +268,8 @@ header{
     text-align: center;
 }
 .info-card label {
-    font-size: 1.5em;
-    color: #6500CA;
+    font-size: 2.5em;
+    color: #FC7900;
     font-weight: 700;
 }
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
@@ -342,14 +346,14 @@ header{
     .navMenu li:hover {
         background: none;
         border-left: none;
-        border-bottom: 3px solid #026e63 ;
+        border-bottom: 3px solid #284265 ;
         transition: .3s all;
     }
     .navMenu li a {
         font-size: 1em !important;
     }
     .active-nav {
-        border-bottom: 3px solid #026e63 !important;
+        border-bottom: 3px solid #284265 !important;
         
     }
 

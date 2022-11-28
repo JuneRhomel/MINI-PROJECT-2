@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+header{
+    background-color: #BDF7FF;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+.main-nav{
+    position: sticky;
+    top: 0;
+    background-color: #BDF7FF;
+    width: 100%;
+    z-index: 10000;
+    transition: .3s all;
+}
+.nav-bg {
+    background-color: #284265 !important;
+}
+.main-nav > .wrapper{
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.logo .logotext{
+    font-family: 'Koulen', cursive;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.055em;
+}
+.logotext span {
+    font-family: 'Koulen', cursive;
+    color: #FC7900;
+    transition: .3s all;;
+}
+.logotext-scroll {
+    color: #ffffff !important;
+    transition: .3s all;
+}
+.main-nav-scroll-text {
+    color: #FC7900 !important;
+    transition: .3s all;
+}
+.main-nav-scroll {
+    background-color: #284265;
+}
+
+.layer {
+    fill: #284265;
+    transition: .3s all;
+}
+.layer2 {
+    fill: #BDF7FF;
+    transition: .3s all;
+}
+.diff {
+    fill: #284265 !important;
+    transition: .3s all;
+}
+
+.navMenu{
+    display: flex;
+    gap:  30px;
+}
+.navList{
+    list-style: none;
+    font-size: 1em;
+}
+.navLink{
+    text-decoration: none;
+    /* color: #333333; */
+}
+.asd {
+    color: #ffffff !important;
+}
+
+
+.hamburger{
+    display: block;
+    /* position: absolute; */
+    z-index: 100;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45045deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45045deg);
+}
+.burger-toggel{
+    transform: translateX(0) !important; 
+    transition: .3s all;
+    opacity: 0;
+}
+
+.navMenu{
+    transform: translateX(100%); 
+    position: absolute;
+    opacity: 1;
+    top: -40px;
+    right: 0;
+    gap: 5px;
+    padding: 98px 0 20px;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 2em;
+    text-align: start;
+    flex-direction: column;
+    background-color: #284265;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+.navMenu.active{
+    right: 0;
+}
+.navMenu li {
+    padding: 1.2em 1em;
+}
+.navMenu li:hover {
+    border-left: 10px solid #FC7900;
+    background-color: #BDF7FF;
+    transition: .3s all;
+    
+}
+.navMenu li:hover a  {
+    color: #FC7900 !important;
+}
+
+
+.hamburger{
+    display: block;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* So the logo can be seen even after toggling the burger */
+.logo{
+    z-index: 1000;
+}
+
+.landingPage{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    /* text-align: center; */
+    width: 100%;
+    /* padding-top: 70px; */
+    height: 100%;
+}
+.bannerText{
+    /* z-index: 10; */
+    /* padding-top: 180px; */
+    /* width: 400px; */
+    width: 100%;
+    z-index: 2;
+}
+.bannerText > h1{
+    padding-bottom: 20px;
+    font-size: 3em;
+    line-height: 133.52%;
+    margin-bottom: .2em;
+}
+.bannerText p {
+    line-height: 141.02%;
+    color: #575757;
+    font-size: 1.3em;
+}
+#text{
+    color: #284265;
+}
+.btnSeeCourses{
+    margin-top: 2em;
+    width: 10em;
+    padding: .7em 0;
+    font-size: 1.1em;
+    background-color: #FC7900;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
+    font-weight: 700;
+    
+}
+.btnSeeCourses:hover{
+    cursor: pointer;
+}
+.heroBanner{
+    display: none; 
+    max-width: 50em;
+    height: 100%;
+}
+.heroBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info{
+    background-color: #8FF8B6;
+    background-color: #284265;
+}
+.info > .wrapper{
+    display: grid;
+    grid-template-areas: 
+    'students graduates approval awards'
+    ;
+    max-width: 1220px;
+}
+.info > .wrapper div{
+    padding: 3em 0;
+}
+.students{
+    grid-area: students;
+}
+.info_offers p{
+    color: #ffffff;
+}
+
+.graduates{
+    grid-area: graduates;
+}
+.approval{
+    grid-area: approval;
+}
+.awards{
+    grid-area: awards;
+}
+.info-card {
+    text-align: center;
+}
+.info-card label {
+    font-size: 2.5em;
+    color: #FC7900;
+    font-weight: 700;
+}
+/* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
+.vectors{
+    z-index: 1;
+}
+.vectors > img{
+    position: absolute;
+    opacity: 0.8;
+}
+#vec{
+    top: 10px;
+    right: 0;
+}
+#vec1{
+    bottom: 20px;
+    right: 0;
+}
+#vec2{
+    bottom: 7px;
+}
+
+@media only screen and (max-width: 900px){
+    nav{
+        justify-content: space-between;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    #vec, #vec1{
+        width: 11%;
+    }
+    #vec1{
+        top: 500px;
+    }
+    #vec2{
+        width: 24%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .hamburger {
+        display: none;
+    }
+    .wrapper {
+        width: 90%;
+        max-width: 1520px;
+    }
+    .navMenu {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        transform: none;
+        gap: 2em;
+    }
+    .navMenu li {
+        width: auto;
+        padding: 0;
+        border-bottom: 3px solid transparent 
+    }
+    .main-nav .wrapper {
+        align-items: center;
+    }
+    .menu {
+        align-items: center;
+    }
+    .navMenu li:hover {
+        background: none;
+        border-left: none;
+        border-bottom: 3px solid #284265 ;
+        transition: .3s all;
+    }
+    .navMenu li a {
+        font-size: 1em !important;
+    }
+    .active-nav {
+        border-bottom: 3px solid #284265 !important;
+        
+    }
+
+}
+@media only screen and (max-width: 800px){
+    /* header{
+        height: 650px;
+    } */
+    .info > .wrapper{
+        grid-template-areas: 
+        'students graduates'
+        'approval awards'
+        ;
+    }
+}
+@media only screen and (min-width: 716px){
+    .bannerText {
+        text-align: center;
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (min-width: 904px) {
+    .heroBanner {
+        display: block;
+    }
+    .bannerText {
+        text-align: start;
+        max-width: 35em;
+    }
+}
+
+@media only screen and (max-width: 300px){
+
+
+    .info > .wrapper{
+        width: 95%;
+    }
+}

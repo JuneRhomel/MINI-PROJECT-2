@@ -5,7 +5,7 @@
 }
 /* section css */
 #sec1 {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background: rgb(213, 255, 226);
     /* background: linear-gradient(180deg, rgb(165, 227, 185) 0%, rgba(184,244,162,1) 50%, rgba(168,227,211,1) 100%); */

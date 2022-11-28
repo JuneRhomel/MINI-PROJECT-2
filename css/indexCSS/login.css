@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.login_container{
+    background-color: #E3FFF9;
+    padding: 30px 50px;
+}
+.login_page{
+    display: flex;
+    justify-content: space-around;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.login_text > p{
+    width: 400px;
+    text-align: center;
+}
+
+.login_form, .forgot{
+    color: #646464;
+    text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid #7B7B7B;
+    background-color: transparent;
+    padding: 0 10px;
+}
+#email{
+    width: 480px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+#password{
+    width: 480px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.hidden_pass, .hidden_email{
+    display: none;
+}
+.hidden_pass.active, .hidden_email.active{
+    display: block;
+    color: red;
+    margin: -5px 0 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.remember{
+    display: flex;
+    gap: 5px;
+}
+.remember > p{
+    margin-left: 30px;
+}
+#remember_chk{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+#remember_span{
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 3px;
+    background-color: #D9D9D9;
+}
+.chk_box:hover #remember_chk ~ #remember_span, .chk_box:hover #remember_chk:checked ~ #remember_span{
+    background-color: white;
+    cursor: pointer;
+}
+.chk_box #remember_chk:checked ~ #remember_span{
+    background-color: #D9D9D9;
+}
+#remember_span::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.chk_box #remember_chk:checked ~ #remember_span::after{
+    display: block;
+}
+.chk_box #remember_span::after{
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.confirm{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #7B7B7B;
+    cursor: pointer;
+}
+#login_btn{
+    color: white;
+    background-color: #FC7900;
+}
+#google_icon{
+    height: 30px;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -35px;
+}
+#google_btn{
+    padding-left: 50px;
+    background-color: transparent;
+}
+
+.signup{
+    color: #646464;
+}
+.signup_link{
+    color: #FC7900;
+}

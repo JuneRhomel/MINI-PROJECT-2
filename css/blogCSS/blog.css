@@ -64,3 +64,23 @@ h1 {
     margin: auto;
     max-width: 1520px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sec1 {
+    height: auto;
+    width: 100vw;
+    background-color: rgb(26, 54, 38);
+}
+#a1 {
+    text-decoration: none;
+}
+#a1:hover {
+    text-decoration: underline;
+}
+#a1:active {
+    text-decoration: underline;
+}

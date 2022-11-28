@@ -98,11 +98,11 @@
     height: 30em; 
     gap: 1em;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1060px) {
     .blog-flex {
         overflow: visible;
         justify-content: center;
-        flex-wrap: wrap;
+
     }
     .blog-card {
         width: 10em;

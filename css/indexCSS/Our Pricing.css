@@ -509,3 +509,8 @@ footer h3 {
         right: -22px;
     }
 }
+
+#sec2 {
+    max-width: 1419px;
+    margin: auto;
+}

@@ -19,7 +19,7 @@
     cursor: default;
 }
 body {
-    background-color: #E3FFF9;
+    background-color: #E3FFF9 !important;
 }
 /* html {
     width: 100%;

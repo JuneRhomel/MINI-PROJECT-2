@@ -45,6 +45,7 @@ header{
     display: flex;
     align-items: center;
     gap: 2em;
+    text-decoration: none !important;
 }
 .logo .logotext{
     font-family: 'Koulen', cursive;

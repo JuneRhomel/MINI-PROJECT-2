@@ -9,7 +9,7 @@
 .leaderboard {
     background: linear-gradient(89.81deg, #BDF7FF 0.16%, rgba(189, 247, 255, 0.26) 99.84%);
     border-radius: 19px;
-    width: 30em;
+    width: 35em;
 
     display: flex;
     justify-content: space-between;
@@ -42,14 +42,10 @@
 }
 .Current-Course {
     display: flex;
-    height: 23em;
     gap: 2em;
 }
 .course-img {
-    width: 30em;
-    background-color: #BDF7FF;
     padding: 1em;
-    border-radius: 19px;
 }
 .course-img img{
     width: 100%;
@@ -104,4 +100,30 @@
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     background-color: #FC7900;
+}
+
+
+.circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #FC7900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    background-color: #BDF7FF;
+    border-radius: 50%;
+}
+.value-content {
+    position: relative;
+    font-size: 1em;
+    color: #284265;
+    font-weight: 700;
 }

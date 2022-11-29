@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    width: 95%;
+    margin: auto;
+}
+.video-course .vid-box {
+    width: 100%;
+}
+.vid-box iframe {
+    width: 100%;
+    height: 30em;
+}
+body {
+    background-color: #E3FFF9;
+}
+.video-course {
+    width: 100%;
+    
+    padding: 1em;
+    border: 3px solid #284265;
+}
+.description {
+    padding: 1em;
+    margin-top: 2em;
+    background: #BDF7FF;
+}
+.description h3 {
+    font-size: 1.2em;
+}
+.description p {
+    margin-top: 1em;
+    font-size: 1em;
+    line-height: 175.02%;
+}
+
+.lesson {
+    height: 100%;
+    border: 3px solid #284265;
+}
+.aside-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    border-bottom: 10px solid #284265;
+}
+.text-course {
+    width: 80%;
+}
+.card-course {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #BDF7FF;
+    transition: .3s ease-in-out;
+}
+.play {
+    width: 20%;
+    font-size: 2.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-lesson p {
+    font-size: .9em;
+    line-height: 175.02%;
+}
+.main-lesson h4 {
+    color: #FC7900;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.main-lesson {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+.cardActive {
+    background: #284265;
+}
+.activeP {
+    color: #ffffff;
+}
+
+.card-course:hover {
+    background: #284265;
+    transition: .3s all;
+}
+.card-course:hover p {
+    color: #ffffff;
+    transition: .3s all;
+}
+.card-course:hover i {
+    color: #ffffff;
+    transition: .3s all;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.main-course {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-lesson {
+    cursor: pointer;
+}
+@media only screen and (min-width: 1310px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+    }
+    .video-course{
+        height: 100%;
+    }
+    aside {
+        width: 30%;
+    } 
+    .main-container section {
+        width: 80%;
+    }
+    .vid-box iframe {
+        height: 40em;
+    }
+}

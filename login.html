@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/indexCSS/login.css">
+</head>
+<body>
+    
+    <div class="login_container">
+        <div class="login_page">
+            <div class="img">
+                <img src="img/login/login.png" alt="image">
+            </div>
+            <div class="login">
+                <div class="login_text">
+                    <img src="img/logo/logo2.png" alt="">
+                    <h1>Hello Again!</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                </div>
+                <form action="#" class="login_form" method="get">
+                    <h5>Email</h5>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                    <div class="hidden_email">
+                        <h4>Email >= 6</h4>
+                    </div>
+                    <h5>Password</h5>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                    <div class="hidden_pass">
+                        <h4>Password >= 8</h4>
+                    </div>
+                    <div class="box">
+                        <div class="remember">
+                            <label class="chk_box">
+                                <input type="checkbox" name="remember" id="remember_chk">
+                                <span id="remember_span"></span>
+                            </label>
+                            <p>Remember me</p>
+                        </div>
+                        <div class="forgot_pass">
+                            <a href="#" class="forgot">Forgot?</a>
+                        </div>
+                    </div>
+
+                    <div class="confirm">
+                        <button id="login_btn">Log In</button>
+                        <button id="google_btn">
+                            <span><img src="img/icon/google-icon.png" alt="google" id="google_icon"> Sign in with Google</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="signup">
+                    <h5>Don't have an account? <a href="#" class="signup_link">Sign up.</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

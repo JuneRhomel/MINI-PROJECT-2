@@ -1,48 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: #333333;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
 }
 .wrapper{
     width: 80%;
-    max-width: 1600px;
     margin: auto;
+    height: 100%;
 }
 header{
-    background-color: #C1FFF2;
-    height: 980px;
+    background-color: #BDF7FF;
+    height: 90vh;
+    min-height: 500px;
+    position: relative;
 }
-nav{
-    position: fixed;
-    background-color: #026E64;
+.main-nav{
+    position: sticky;
+    top: 0;
+    background-color: #BDF7FF;
     width: 100%;
     z-index: 10000;
+    transition: .3s all;
 }
-nav > .wrapper{
+.nav-bg {
+    background-color: #284265 !important;
+}
+.main-nav > .wrapper{
+    padding: .5em 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.menu{
-    padding: 25px 0;
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    text-decoration: none !important;
 }
+.logo .logotext{
+    font-family: 'Koulen', cursive;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.055em;
+}
+.logotext span {
+    font-family: 'Koulen', cursive;
+    color: #FC7900;
+    transition: .3s all;;
+}
+.logotext-scroll {
+    color: #ffffff !important;
+    transition: .3s all;
+}
+.main-nav-scroll-text {
+    color: #FC7900 !important;
+    transition: .3s all;
+}
+.main-nav-scroll {
+    background-color: #284265;
+}
+
+.layer {
+    fill: #284265;
+    transition: .3s all;
+}
+.layer2 {
+    fill: #BDF7FF;
+    transition: .3s all;
+}
+.diff {
+    fill: #284265 !important;
+    transition: .3s all;
+}
+
 .navMenu{
     display: flex;
     gap:  30px;
 }
 .navList{
     list-style: none;
+    font-size: 1em;
 }
 .navLink{
     text-decoration: none;
-    color: black;
+    /* color: #333333; */
 }
+.asd {
+    color: #ffffff !important;
+}
+
+
 .hamburger{
-    display: none;
+    display: block;
+    /* position: absolute; */
+    z-index: 100;
 }
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45045deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45045deg);
+}
+.burger-toggel{
+    transform: translateX(0) !important; 
+    transition: .3s all;
+    opacity: 0;
+}
+
+.navMenu{
+    transform: translateX(100%); 
+    position: absolute;
+    opacity: 1;
+    top: -40px;
+    right: 0;
+    gap: 5px;
+    padding: 98px 0 20px;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 2em;
+    text-align: start;
+    flex-direction: column;
+    background-color: #284265;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+.navMenu.active{
+    right: 0;
+}
+.navMenu li {
+    padding: 1.2em 1em;
+}
+.navMenu li:hover {
+    border-left: 10px solid #FC7900;
+    background-color: #BDF7FF;
+    transition: .3s all;
+    
+}
+.navMenu li:hover a  {
+    color: #FC7900 !important;
+}
+
+
+.hamburger{
+    display: block;
+}
+
 .bar{
     display: block;
     width: 25px;
@@ -52,63 +169,94 @@ nav > .wrapper{
     transition: all 0.3s ease-in-out;
     background-color: black;
 }
+
 /* So the logo can be seen even after toggling the burger */
 .logo{
     z-index: 1000;
-    padding-top: 5px;
 }
 
 .landingPage{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1224px;
-    margin: auto;
-    padding-top: 70px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    /* text-align: center; */
+    width: 100%;
+    /* padding-top: 70px; */
+    height: 100%;
 }
 .bannerText{
-    z-index: 10;
-    padding-top: 180px;
-    width: 400px;
+    /* z-index: 10; */
+    /* padding-top: 180px; */
+    /* width: 400px; */
+    width: 100%;
+    z-index: 2;
 }
 .bannerText > h1{
     padding-bottom: 20px;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 133.52%;
+    margin-bottom: .2em;
+}
+.bannerText p {
+    line-height: 141.02%;
+    color: #575757;
+    font-size: 1.3em;
 }
 #text{
-    color: #026E64;
+    color: #284265;
 }
 .btnSeeCourses{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 15px;
-    background-color: #6500CA;
+    margin-top: 2em;
+    width: 10em;
+    padding: .7em 0;
+    font-size: 1.1em;
+    background-color: #FC7900;
     color: white;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none;
+    box-shadow: 2px 6px 8px -2px rgba(250, 177, 21, 0.47);
+    font-weight: 700;
+    
 }
 .btnSeeCourses:hover{
     cursor: pointer;
 }
 .heroBanner{
-    grid-column-start: 3;
+    display: none; 
+    max-width: 50em;
+    height: 100%;
 }
-
+.heroBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .info{
     background-color: #8FF8B6;
-    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
+    background-color: #284265;
 }
 .info > .wrapper{
     display: grid;
     grid-template-areas: 
     'students graduates approval awards'
     ;
+    max-width: 1220px;
 }
 .info > .wrapper div{
-    padding: 2em 0;
+    padding: 3em 0;
 }
 .students{
     grid-area: students;
 }
+.info_offers p{
+    color: #ffffff;
+}
+
 .graduates{
     grid-area: graduates;
 }
@@ -118,105 +266,13 @@ nav > .wrapper{
 .awards{
     grid-area: awards;
 }
-
-.info_offers{
-    background-color: #E4FFF9;
-}
-.courses{
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-}
-.courses > p{
-    color: #6500CA;
-    font-weight: bold;
-}
-.courses > p, .courses > h2{
+.info-card {
     text-align: center;
 }
-.see_more{
-    align-self: center;
-    margin-bottom: -20px;
-}
-.see_more button{
-    background-color: #6500CA;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 50px;
-    font-size: larger;
-}
-.see_more button:hover{
-    cursor: pointer;
-}
-.offers{
-    padding-top: 50px;
-    display: grid;
-    max-width: 1224px;
-    margin: auto;
-    /* 7 columns */
-    grid-template-columns: 1fr 1fr 3% 1fr 3% 1fr 3% 1fr 1fr;
-    grid-template-rows: 1fr 20% 20% 20% 1fr;
-}
-.card{
-    border: 3px solid #026E64;
-    background-color: #C1FFF2;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #026E64;
-}
-.card > h3, .card > h5, .card > h6{
-    margin: 15px 0;
-}
-.card > h3{
-    color: #026E64;
-}
-.card button{
-    background-color: transparent;
-    border: 3px solid #6500CA;
-    border-radius: 10px;
-    color: #6500CA;
-    padding: 5px 50px;
-}
-.card button:hover{
-    cursor: pointer;
-}
-.card button > p{
+.info-card label {
+    font-size: 2.5em;
+    color: #FC7900;
     font-weight: 700;
-}
-.card:nth-child(1), .card:nth-child(3){
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-.card:nth-child(2), .card:nth-child(4){
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-.card:nth-child(1){
-    grid-column: 2;
-}
-.card:nth-child(2){
-    grid-column: 4;
-}
-.card:nth-child(3){
-    grid-column: 6;
-}
-.card:nth-child(4){
-    grid-column: 8;
-    border: 3px solid #6500CA;
-    background-color: #C1FFF2;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #6500CA;
-}
-.card:nth-child(4) button{
-    background-color: #6500CA;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 50px;
-}
-.card:nth-child(4) button > p{
-    color: white;
 }
 /* Vectors... Hindi ko po alam kung paano ilagay ung bilog bilog kaya nag export nalang po ako para malagay sa bg */
 .vectors{
@@ -227,79 +283,24 @@ nav > .wrapper{
     opacity: 0.8;
 }
 #vec{
-    top: 59px;
+    top: 10px;
     right: 0;
 }
 #vec1{
-    top: 706px;
+    bottom: 20px;
     right: 0;
 }
 #vec2{
-    top: 347px;
+    bottom: 7px;
 }
 
-@media only screen and (max-width: 1400px){
-    .heroBanner{
-        position: absolute;
-        right: 50px;
-    }
-    .heroBanner > img{
-        height: 100%;
-        width: 100%;
-    }
-    .see_more{
-        margin-top: 75px;
-    }
-
-    .offers{
-        grid-template-rows: 1fr 10% 1fr;
-    }
-    .card:nth-child(1){
-        grid-row: 1;
-        grid-column: 2;
-    }
-    .card:nth-child(2){
-        grid-row: 3;
-        grid-column: 2;
-    }
-    .card:nth-child(3){
-        grid-row: 1;
-        grid-column: 8;
-    }
-    .card:nth-child(4){
-        grid-row: 3;
-        grid-column: 8;
-    }
-}
-@media only screen and (max-width: 1000px){
-    .logo{
-        padding: 15px;
-    }
-    .logo a > img{
-        width: 200px;
-    }
-}
-@media only screen and (max-width: 920px){
-    header{
-        height: 750px;
-    }
+@media only screen and (max-width: 900px){
     nav{
         justify-content: space-between;
-    }
-    .logo a > img{
-        width: 180px;
     }
 
     .wrapper{
         width: 90%;
-    }
-    .bannerText{
-        padding-top: 50px;
-        width: 200px;
-    }
-    .heroBanner > img{
-        height: 601.67px;
-        width: 600px;
     }
 
     #vec, #vec1{
@@ -311,78 +312,62 @@ nav > .wrapper{
     #vec2{
         width: 24%;
     }
-
-    .info_offers > .wrapper{
+}
+@media only screen and (min-width: 1100px) {
+    .hamburger {
+        display: none;
+    }
+    .wrapper {
+        width: 90%;
+        max-width: 1520px;
+    }
+    .navMenu {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
         width: 100%;
+        padding: 0;
+        flex-direction: row;
+        transform: none;
+        gap: 2em;
     }
-    .offers{
-        grid-template-rows: 1fr 1fr;
+    .navMenu li {
+        width: auto;
+        padding: 0;
+        border-bottom: 3px solid transparent 
     }
-    .card:nth-child(2){
-        grid-row: 2;
+    .main-nav .wrapper {
+        align-items: center;
     }
-    .card:nth-child(4){
-        grid-row: 2;
+    .menu {
+        align-items: center;
     }
+    .navMenu li:hover {
+        background: none;
+        border-left: none;
+        border-bottom: 3px solid #284265 ;
+        transition: .3s all;
+    }
+    .navMenu li a {
+        font-size: 1em !important;
+        color: #284265 ;
+    }
+    .active-nav-a {
+        color: #ffffff !important;
+    }
+    .active-nav {
+        color: #FC7900 !important;
+        font-weight: 700;
+    }
+
 }
 @media only screen and (max-width: 800px){
-    header{
-        height: 700px;
-    }
-    nav .wrapper{
-        width: 93%;
-    }
-    .logo a > img{
-        width: 150px;
-    }
-    .menu{
-        padding: 20px 0;
-    }
-    .navMenu{
-        gap: 20px;
-    }
-    .heroBanner > img{
-        height: 401.67px;
-        width: 400px;
-    }
-}
-@media only screen and (max-width: 700px){
-    header{
+    /* header{
         height: 650px;
-    }
-    .hamburger{
-        display: block;
-        position: absolute;
-        right: 3%;
-        z-index: 100;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45045deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45045deg);
-    }
-    .navMenu{
-        position: absolute;
-        right: -1000px;
-        top: 0;
-        gap: 5px;
-        padding: 58px 0 20px;
-        width: 40%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        flex-direction: column;
-        background-color: #026E64;
-        z-index: 100;
-    }
-    .navMenu.active{
-        right: 0;
-    }
-
+    } */
     .info > .wrapper{
         grid-template-areas: 
         'students graduates'
@@ -390,67 +375,28 @@ nav > .wrapper{
         ;
     }
 }
-@media only screen and (max-width: 600px){
-    .bannerText{
-        padding-top: 0;
-        width: 200px;
+@media only screen and (min-width: 716px){
+    .bannerText {
+        text-align: center;
+        width: 100%;
+        
     }
-    .heroBanner {
-        right: 0;
-    }
-    .heroBanner > img{
-        height: 301.67px;
-        width: 300px;
-    }
+}
 
-    .see_more{
-        margin-top: 25px;
+@media only screen and (min-width: 904px) {
+    .heroBanner {
+        display: block;
     }
-    
-}
-@media only screen and (max-width: 540px){
-    .offers{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-    .card{
-        margin: 10px 0;
-    }
-    .card:nth-child(1){
-        grid-row: 1;
-        grid-column: 2;
-    }
-    .card:nth-child(2){
-        grid-row: 2;
-        grid-column: 2;
-    }
-    .card:nth-child(3){
-        grid-row: 3;
-        grid-column: 2;
-    }
-    .card:nth-child(4){
-        grid-row: 4;
-        grid-column: 2;
+    .bannerText {
+        text-align: start;
+        max-width: 35em;
     }
 }
-@media only screen and (max-width: 400px){
-    header{
-        height: 575px;
-    }
-    .heroBanner > img{
-        height: 201.67px;
-        width: 200px;
-    }
-}
+
 @media only screen and (max-width: 300px){
-    .landingPage{
-        padding-top: 100px;
-    }
-    .heroBanner{
-        margin-top: -30px;
-    }
+
 
     .info > .wrapper{
-        width: 97%;
+        width: 95%;
     }
 }

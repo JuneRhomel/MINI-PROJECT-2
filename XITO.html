@@ -7,10 +7,43 @@
     <title>Online Edu</title>
 
     <link rel="stylesheet" href="css/indexCSS/Nav & Hero.css">
-    <link rel="stylesheet" href="css/indexCSS/teachers.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="main-nav">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="home.html"><img src="/assets/logo.svg" alt="logo" id="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="navMenu">
+                    <li class="navList">
+                        <a href="#" class="navLink">Home</a>
+                    </li>
+                    <li class="navList">
+                        <a href="#" class="navLink">My Course</a>
+                    </li>
+                    <li class="navList">
+                        <a href="#" class="navLink">Contact</a>
+                    </li>
+                    <li class="navList">
+                        <a href="#" class="navLink">Blog</a>
+                    </li>
+                    <li class="navList">
+                        <a href="#" class="navLink">About Us</a>
+                    </li>
+                    <li class="navList">
+                        <a href="#" class="navLink">Account</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
         <header>
             <!-- Background vectors, nag export nalang po ako ng img ksi hindi ko po alam kung paano sila ilagay hahaha. -->
             <div class="vectors">
@@ -18,47 +51,12 @@
                 <img src="img/vectors/vector-1.png" alt="" id="vec1">
                 <img src="img/vectors/vector-2.png" alt="" id="vec2">
             </div>
-
-            <nav>
-                <div class="wrapper">
-                    <div class="logo">
-                        <a href="home.html"><img src="img/logo/logo.png" alt="logo" id="logo"></a>
-                    </div>
-                    <div class="menu">
-                        <ul class="navMenu">
-                            <li class="navList">
-                                <a href="#" class="navLink">Home</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">My Course</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Contact</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Blog</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">About Us</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Account</a>
-                            </li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
             <div class="wrapper">
                 <div class="landingPage">
                     <div class="bannerText">
                         <h1><span id="text">Education</span> is the key to all the locked doors of the unknown.</h1>
-                        <p>Learn essential tech skills with KodeGo’s online bootcamps and land your dream career in as fast as 12 weeks.</p>
+                        <p>Learn essential tech skills with KodeGo’s online bootcamps and land your dream career in as
+                            fast as 12 weeks.</p>
                         <button class="btnSeeCourses">See Courses</button>
                     </div>
 
@@ -72,194 +70,28 @@
         <section class="info_offers">
             <div class="info">
                 <div class="wrapper">
-                    <div class="students">
-                        <h1>2,500+</h1>
+                    <div class="students info-card">
+                        <label>2,500+</label>
                         <p>Students Enrolled</p>
                     </div>
-                    <div class="graduates">
-                        <h1>351</h1>
+                    <div class="graduates info-card">
+                        <label>351</label>
                         <p>Successful Kids</p>
                     </div>
-                    <div class="approval">
-                        <h1>564</h1>
+                    <div class="approval info-card">
+                        <label>564</label>
                         <p>Happy Parents</p>
                     </div>
-                    <div class="awards">
-                        <h1>300</h1>
+                    <div class="awards info-card">
+                        <label>300</label>
                         <p>Awards Won</p>
                     </div>
                 </div>
             </div>
 
-            <div class="wrapper">
-                <div class="courses">
-                    <p>COURSE</p>
-                    <h2>What We Offer</h2>
-
-                    <div class="offers">
-                        <div class="card">
-                            <img src="img/course/english.png" alt="">
-                            <h3>English</h3>
-                            <h5>12 Lessons</h5>
-                            <h6>3 Projects</h6>
-                            <button><p>Free</p></button>
-                        </div>
-                        <div class="card">
-                            <img src="img/course/math.png" alt="">
-                            <h3>Math</h3>
-                            <h5>12 Lessons</h5>
-                            <h6>3 Projects</h6>
-                            <button><p>Free</p></button>
-                        </div>
-                        <div class="card">
-                            <img src="img/course/science.png" alt="">
-                            <h3>Science</h3>
-                            <h5>12 Lessons</h5>
-                            <h6>3 Projects</h6>
-                            <button><p>Free</p></button>
-                        </div>
-                        <div class="card">
-                            <img src="img/course/geography.png" alt="">
-                            <h3>Geography</h3>
-                            <h5>12 Lessons</h5>
-                            <h6>3 Projects</h6>
-                            <button><p>$20.00</p></button>
-                        </div>
-                    </div>
-
-                    <a href="#" class="see_more">
-                        <button>See More</button>
-                    </a>
-                </div>
-            </div>
         </section>
+    </section>
 
-        <!-- Teachers -->
-        <section class="discover_teachers">
-            <div class="wrapper">
-                <div class="teachers">
-                    <p>MEET OUR STAFF</p>
-                    <h2>DISCOVER OUR TEACHERS</h2>
-                    <div class="gallery">
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher3.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher2.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="teacher_card">
-                            <div class="img">
-                                <img src="img/teachers/teacher1.png" alt="teacher">
-                            </div>
-                            <div class="text">
-                                <h3>Shirley Smith</h3>
-                                <p>Hello, I’m a teacher, real man you alway see in your TV. Surprise, i’m also a photography teacher.</p>
-                            </div>
-                            <div class="socmed">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/icon/twitter.png" alt=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
 
     <script src="js/XITO.js"></script>
 </body>

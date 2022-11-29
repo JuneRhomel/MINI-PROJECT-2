@@ -481,6 +481,7 @@ html {
       url("/img/contactHeaderSM.jpg");
     gap: 5rem;
     justify-content: flex-end;
+    padding: 2rem 1rem;
   }
   #contactHeader strong {
     transform: translateY(15rem);
@@ -489,69 +490,79 @@ html {
   #contactHeader p {
     text-align: justify;
     margin-bottom: 5rem;
-    transform: translateY(25rem);
+    transform: translateY(29rem);
+    line-height: 160%;
   }
   #getInTouch {
-    padding: 23rem 0 3rem;
+    padding: 28rem 0 4rem;
+  }
+  #messageUs {
+    width: 100%;
+    padding: 5rem 1rem;
   }
   #choiceDifference {
     height: 25rem;
-}
+  }
   #choiceDifference p {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 }
-@media (max-width: 344px) {
+@media (max-width: 386px) {
   #contactHeader strong {
-    transform: translateY(20rem);
+    transform: translateY(16rem);
+    font-size: 2.8rem;
   }
   #contactHeader p {
-    transform: translateY(28rem);
+    transform: translateY(32rem);
   }
   #getInTouch {
-    padding: 27rem 0 3rem;
+    padding: 31rem 0 4rem;
   }
   #choiceDifference p {
     font-size: 2.3rem;
     line-height: 2.8rem;
   }
 }
-@media (max-width: 330px) {
-  #messageUsText p {
-    display: none;
-  }
-}
-
-@media (max-width: 320px) {
+@media (max-width: 323px) {
   #contactHeader strong {
-    transform: translateY(23rem);
-    text-align: start;
-    font-size: 2.3rem;
-  }
-  #contactHeader p {
-    transform: translateY(30rem);
-  }
-  #getInTouch {
-    padding: 30rem 0 3rem;
-  }
-}
-@media (max-width: 295px) {
-  #contactHeader strong {
-    transform: translateY(25rem);
-  }
-  #contactHeader p {
-    transform: translateY(32rem);
-  }
-}
-@media (max-width: 274px) {
-  #contactHeader strong {
-    transform: translateY(28rem);
+    transform: translateY(17rem);
+    font-size: 2.6rem;
   }
   #contactHeader p {
     transform: translateY(34rem);
   }
   #getInTouch {
-    padding: 32rem 0 3rem;
+    padding: 33rem 0 4rem;
+  }
+}
+@media (max-width: 300px) {
+  #contactHeader strong {
+    transform: translateY(20rem);
+  }
+  #contactHeader p {
+    transform: translateY(37rem);
+  }
+  #getInTouch {
+    padding: 36rem 0 4rem;
+  }
+  #getInTouchArticleTwo {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 295px) {
+  #getInTouchFlex {
+    gap: 6.5rem;
+  }
+}
+@media (max-width: 274px) {
+  #contactHeader strong {
+    transform: translateY(24rem);
+  }
+  #contactHeader p {
+    transform: translateY(40rem);
+  }
+  #getInTouch {
+    padding: 39rem 0 4rem;
   }
 }

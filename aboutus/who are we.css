@@ -1,18 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
 	margin: 0;
-	padding: 1%;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	color: #284265;
 
 }
 
+.about-banner {
+    height: 20em;
+    overflow: hidden;
+    position: relative;
+}
+h1 {
+    font-size: 3em;
+    color: #FC7900;
+}
+.about-banner img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    position: fixed;
+}
+.about-banner .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 66, 101, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teachers-section {
+    padding-top: 10em;
+    background-color: #E3FFF9;
+}
+.whoAre {
+	background-color: #BDF7FF;
+}
+.whoAre li{
+	list-style: none;
+}
+
 body {
-	font-size: 6px;
 	line-height: 1.67;
-	padding: 110px 0;
-	background-color: rgb(200, 86, 86)76, 17, 17)76, 17, 17)76, 17, 17);
+	background-color: #E3FFF9 !important;
 }
 
 a {
@@ -31,7 +68,11 @@ a:hover {
 	float: left;
 	width: 20%;
 }
-
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .team-members li:nth-child(2) > div:first-child {
 	margin-left: 20%;
 }
@@ -165,9 +206,36 @@ a:hover {
 .flex-center > div:first-child {
 	order: 2;
 }
-
+.wrapper {
+	height: auto !important;
+}
+.team-members  {
+	/* position: absolute; */
+	top: 14em;
+}
+.whoAre {
+	margin: auto;
+	height: 100vh;
+	max-height: 828px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media only screen and (max-width: 990px) {
+	.team-flex {
+		row-gap: 5em;
+	}
+}
+.container-whoAre {
+	width: 80%;
+	margin: auto;
+}
+.team-members img {
+	object-fit: contain;
+	max-width: 14em;
+}
 /* RESPONSIVE */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1202px) {
 	.sm-no-flex {
 		display: block;
 	}
@@ -176,6 +244,9 @@ a:hover {
 	}
 	.sm-text-center {
 		text-align: center;
+	}
+	.team-members {
+		transform: rotate(0deg);
 	}
 }
 
@@ -199,6 +270,7 @@ a:hover {
 		padding: 15px;
 	}
 	
+	
 }
 
 @media only screen and (max-width : 399px) {
@@ -212,6 +284,54 @@ a:hover {
 	text-align: center;
 	justify-content: center;
 	font-size: 1.2rem;
-	background-image: url(/MINI-PROJECT-2/images/missionandvision.jpg);
+	background-image: url(/images/missionandvision.jpg);
+
+}
+.OurMission {
+	background-color: #BDF7FF;
+}
+.ourmission-container {
+	height: 40em;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+.text-ourmission {
+	max-width: 50em;
+	text-align: center;
+}
+.text-ourmission h2 {
+	font-weight: 700;
+	font-size: 2.5em;
+}
+.flip {
+	flex-direction: column
+}
+
+.text-ourmission-imgBox img {
+	width: 100%;
+	min-width: 27em;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+@media only screen and (max-width : 1300px) {
+	.ourmission-container {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width : 1038px) {
+	.ourmission-container {
+		flex-direction: row !important;
+		gap: 5em;
+	}
+	.flip {
+		flex-direction: row-reverse !important;
+	}
 
 }

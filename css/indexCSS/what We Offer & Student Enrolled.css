@@ -101,9 +101,7 @@
 @media only screen and (min-width: 838px) {
     .course-main {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+
     }
     .course-section {
         width: 90%;
@@ -114,8 +112,13 @@
     }
 }
 @media only screen and (min-width: 1400px) {
+    .course-main {
+        justify-content: center;
+        align-items: center;
+
+    }
     .course-section {
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     .padding {

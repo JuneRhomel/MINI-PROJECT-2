@@ -9,64 +9,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="container">
-        <header>
-            <div class="vectors">
-                <img src="img/vectors/vector.png" alt="" id="vec">
-                <img src="img/vectors/vector-1.png" alt="" id="vec1">
-                <img src="img/vectors/vector-2.png" alt="" id="vec2">
-            </div>
-
-            <nav>
-                <div class="wrapper">
-                    <div class="logo">
-                        <a href="home.html"><img src="#" alt="logo" id="logo"></a>
-                    </div>
-                    <div class="menu">
-                        <ul class="navMenu">
-                            <li class="navList">
-                                <a href="#" class="navLink">Home</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">My Course</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Contact</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Blog</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">About Us</a>
-                            </li>
-                            <li class="navList">
-                                <a href="#" class="navLink">Account</a>
-                            </li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="wrapper">
-                <div class="landingPage">
-                    <div class="bannerText">
-                        <h1><span id="text">Education</span> is the key to all the locked doors of the unknown.</h1>
-                        <p>Learn essential tech skills with KodeGo’s online bootcamps and land your dream career in as fast as 12 weeks.</p>
-                        <button class="btnSeeCourses">See Courses</button>
-                    </div>
-
-                    <div class="heroBanner">
-                        <img src="img/banner/heroBanner.png" alt="heroBanner">
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div> -->
     <section class="contactHeader-container">
       <div id="contactHeader">
         <strong>Let's make something awesome together</strong>
@@ -77,60 +19,60 @@
       <div id="getInTouch">
         <h2>Get In Touch</h2>
         <div id="getInTouchFlex">
-          <article>
+          <article id="getInTouchArticleOne">
             <div class="getInTouchInfo">
               <div class="getInTouchIcon">
                 <i class="fas fa-location-dot"></i>
               </div>
               <span class="getInTouchIconName">Location</span>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData one">
               <h3>Weifield Group Contracting</h3>
               <div class="info">
                 <p>6950 S. Jordan Road Centennial, CO 80112</p>
               </div>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData two">
               <h3>Weifield Group Contracting</h3>
               <div class="info">
                 <p>6950 S. Jordan Road Centennial, CO 80112</p>
               </div>
             </div>
           </article>
-          <article>
+          <article id="getInTouchArticleTwo">
             <div class="getInTouchInfo">
               <div class="getInTouchIcon">
                 <i class="fas fa-phone"></i>
               </div>
               <span class="getInTouchIconName">Number</span>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData one">
               <h3>Weifield Group Contracting</h3>
               <div class="info">
                 <p>877.WEIFIELD phone 303.202.0466 facsimile</p>
               </div>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData two">
               <h3>Weifield 24/7 Service Department</h3>
               <div class="info">
                 <p id="dataWeird">877.WEIFIELD <br> (Then press 0 for emergency calls)</p>
               </div>
             </div>
           </article>
-          <article>
+          <article id="getInTouchArticleThree">
             <div class="getInTouchInfo">
               <div class="getInTouchIcon">
                 <i class="fas fa-envelope"></i>
               </div>
               <span class="getInTouchIconName">Email</span>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData one">
               <h3>Request for Proposal</h3>
               <div class="info">
                 <p>Info@weifieldgroup.com</p>
               </div>
             </div>
-            <div class="getInTouchData">
+            <div class="getInTouchData two">
               <h3>All Bid Opportunities</h3>
               <div class="info">
                 <p>estimating@weifieldgroup.com</p>
@@ -146,24 +88,26 @@
           <h2>Message Us</h2>
           <p>If you wish to be considered for employment at Weifield, please do not send a message, here – instead, please complete Weifield’s job application and our Human Resources department will contact you after their review of your submitted information.</p>
         </div>
-        <form id="messageUsForm">
+        <form id="messageUsForm" action="https://formsubmit.co/educademyg2@gmail.com"  method="post">
           <div id="messageUsName">
-            <label for="firstName">First Name <input type="text" id="firstName" /></label>
-            <label for="lastName">Last Name <input type="text" id="lastName" /></label>
+            <label for="firstName">First Name <input type="text" id="firstName" name="FirstName" /></label>
+            <label for="lastName">Last Name <input type="text" id="lastName" name="LastName" /></label>
           </div>
-          <label for="phoneNumber">Phone Number <input type="number" id="phoneNumber" /></label>
-          <label for="email">Email <input type="email" id="email" /></label>
-          <label>What's your concern? <textarea></textarea></label>
+          <label for="phoneNumber">Phone Number <input  id="phoneNumber" name="Phone Number" /></label>
+          <label for="email">Email <input type="email" id="email" name="Email" /></label>
+          <label>What's your concern? <textarea name="Message"></textarea></label>
           <button type="submit">Send</button>
         </form>
       </div>
     </section>
-
-
-
-    <section class="section-map">
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d311853.1656560449!2d120.96249459606246!3d14.240661911585773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1669601169436!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="map-container">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.1070602940617!2d125.81541761528068!3d7.45340686372068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f95367d438e203%3A0x9a72f1eb68779d76!2sSt%20Mary&#39;s%20College%20of%20Tagum!5e0!3m2!1sen!2sph!4v1669605783247!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <section class="choiceDifference-container">
+      <div id="choiceDifference">
+        <p>Who you work with matters. <br> Learn more about the Choice Difference!</p>
       </div>
     </section>
   </body>

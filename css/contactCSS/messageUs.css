@@ -17,8 +17,6 @@ html {
   );
   font-size: 1.6rem;
   margin: 0 auto;
-  background-size: cover;
-  background-position: center;
   padding-top: 8.5rem;
 }
 #contactHeader {
@@ -33,8 +31,9 @@ html {
       rgba(138, 248, 255, 0.71)
     ),
     url("/img/contactHeader.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 2rem;
 }
 #contactHeader strong {
@@ -65,8 +64,9 @@ html {
   margin-bottom: 5rem;
 }
 #getInTouchFlex {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  gap: 7rem;
 }
 #getInTouchFlex article {
   flex: 0 0 calc(100% / 3);
@@ -114,7 +114,7 @@ html {
 .getInTouchData p {
   margin: 1.5rem auto;
   font-size: 1.6rem;
-  width: 20rem;
+  /* width: 20rem; */
   text-align: center;
   font-weight: 400;
 }
@@ -148,6 +148,7 @@ html {
   line-height: 189.52%;
   max-width: 41.8rem;
   font-size: 1.8rem;
+  text-align: justify;
 }
 #messageUsForm {
   flex: 0 0 55%;
@@ -165,6 +166,7 @@ html {
   background: #fff;
   outline: none;
   border: none;
+  font-size: 1.6rem;
 }
 #messageUsName {
   display: flex;
@@ -185,18 +187,207 @@ html {
   width: 12rem;
   height: 4rem;
   margin-left: auto;
-  margin-right: 4rem;
   background: #6500ca;
   box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
   border-radius: 14px;
   color: #fff;
   font-size: 1.6rem;
   border: none;
+  cursor: pointer;
+}
+.map-container {
+  margin: 0 auto;
+  background: #0f7d7d;
+}
+#map {
+  margin: auto;
+  display: flex;
+  padding: 0;
+  gap: 3rem;
+}
+#map iframe {
+  width: 100%;
+  height: 30rem;
+}
+.choiceDifference-container {
+  background-image: linear-gradient(
+    rgba(40, 66, 101, 0.54),
+    rgba(40, 66, 101, 0.54)
+  );
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+#choiceDifference {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 27rem;
+  background-image: linear-gradient(
+      rgba(40, 66, 101, 0.54),
+      rgba(40, 66, 101, 0.54)
+    ),
+    url("/img/contactFooter.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+#choiceDifference p {
+  color: #fc7900;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+@media (min-width: 1500px) {
+  #messageUs {
+    padding: 7.5rem 12rem;
+  }
+}
+@media (min-width: 1100px) {
+  .getInTouchData {
+    height: 8rem;
+    width: 30rem;
+  }
+  #messageUs {
+    padding: 7.5rem 4rem;
+    gap: 3rem;
+  }
+  #messageUsText p {
+    max-width: 55rem;
+  }
+}
+@media (max-width: 1071px) {
+  .getInTouchData {
+    height: 8rem;
+  }
 }
 @media (max-width: 925px) {
+  #getInTouch {
+    padding: 5rem 0;
+  }
+  #getInTouchFlex {
+    grid-template: 1fr auto / 1fr 1fr;
+    gap: 7rem;
+  }
+  #getInTouchArticleOne {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #getInTouchArticleTwo {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  #getInTouchFlex article#getInTouchArticleThree {
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #getInTouchArticleThree .getInTouchInfo {
+    grid-area: 1 / 1 / 2 / 3;
+    align-items: center;
+  }
+  #getInTouchArticleThree .getInTouchData.one {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0 auto;
+  }
+  #getInTouchArticleThree .getInTouchData.two {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 0 auto;
+  }
+
+  #messageUs {
+    padding: 5rem 0;
+    grid-template: 3rem;
+  }
+  #messageUsText h2 {
+    margin-bottom: 3rem;
+  }
+  #messageUsText p {
+    max-width: 100%;
+
+    margin-bottom: 2rem;
+  }
+  #messageUsForm button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 700px) {
+  #getInTouch h2 {
+    margin-bottom: 8rem;
+  }
+  #getInTouchFlex {
+    grid-template: auto auto auto / 1fr;
+    gap: 7rem;
+  }
+  #getInTouchFlex article {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  #getInTouchArticleOne {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  #getInTouchArticleOne .getInTouchInfo {
+    grid-area: 1 / 1 / 3 / 2;
+    align-items: center;
+  }
+  #getInTouchArticleOne .getInTouchData.one {
+    grid-area: 1 / 2 / 2 / 4;
+    margin-right: auto;
+  }
+  #getInTouchArticleOne .getInTouchData.two {
+    grid-area: 2 / 2 / 3 / 4;
+    margin-right: auto;
+  }
+  #getInTouchArticleTwo {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #getInTouchArticleTwo .getInTouchInfo {
+    grid-area: 1 / 3 / 3 / 4;
+    align-items: center;
+  }
+  #getInTouchArticleTwo .getInTouchData.one {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-left: auto;
+  }
+  #getInTouchArticleTwo .getInTouchData.two {
+    grid-area: 2 / 1 / 3 / 3;
+    margin-left: auto;
+  }
+  #getInTouchFlex article#getInTouchArticleThree {
+    grid-area: 3 / 1 / 4 / 2;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+  #getInTouchArticleThree .getInTouchInfo {
+    grid-area: 1 / 1 / 3 / 2;
+    align-items: center;
+  }
+  #getInTouchArticleThree .getInTouchData.one {
+    grid-area: 1 / 2 / 2 / 4;
+    margin: 0 auto 0 0;
+  }
+  #getInTouchArticleThree .getInTouchData.two {
+    grid-area: 2 / 2 / 3 / 4;
+    margin: 0 auto 0 0;
+  }
+  .getInTouchData {
+    max-width: 70rem;
+  }
+  :is(#getInTouchArticleOne, #getInTouchArticleThree) .getInTouchData h3 {
+    text-align: start;
+  }
+  #getInTouchArticleTwo .getInTouchData h3 {
+    text-align: end;
+  }
+  .getInTouchData p {
+    text-align: start;
+  }
+  #getInTouchArticleTwo .getInTouchData p {
+    text-align: end;
+  }
+
   #messageUs {
     flex-direction: column;
-    padding: 5rem 0;
+    gap: 2rem;
   }
   #messageUsText,
   #messageUsForm {
@@ -206,18 +397,61 @@ html {
   }
   #messageUsText h2 {
     text-align: center;
-    margin-bottom: 3rem;
-  }
-  #messageUsText p {
-    max-width: 100%;
-    text-align: justify;
-    margin-bottom: 2rem;
-  }
-  #messageUsForm button {
-    margin-right: 0;
   }
 }
 @media (max-width: 534px) {
+  #getInTouch {
+    padding: 5rem 0 3rem;
+  }
+  #getInTouch h2 {
+    margin-bottom: 5rem;
+  }
+  #getInTouchFlex {
+    grid-template: auto auto auto / 1fr;
+    gap: 4rem;
+  }
+  #getInTouchFlex article {
+    grid-template: auto auto auto / 1fr;
+    gap: 2rem;
+  }
+  #getInTouchArticleOne {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  :is(#getInTouchArticleOne, #getInTouchArticleTwo, #getInTouchArticleThree)
+    .getInTouchInfo {
+    grid-area: 1 / 1 / 2 / 2;
+    align-items: center;
+  }
+  :is(#getInTouchArticleOne, #getInTouchArticleTwo, #getInTouchArticleThree)
+    .getInTouchData.one {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: auto;
+  }
+  :is(#getInTouchArticleOne, #getInTouchArticleTwo, #getInTouchArticleThree)
+    .getInTouchData.two {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: auto;
+  }
+  #getInTouchArticleTwo {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #getInTouchFlex article#getInTouchArticleThree {
+    grid-area: 3 / 1 / 4 / 2;
+    grid-template: auto auto auto / 1fr;
+  }
+  .getInTouchData {
+    max-width: 70rem;
+  }
+  :is(#getInTouchArticleOne, #getInTouchArticleThree, #getInTouchArticleTwo)
+    .getInTouchData
+    h3 {
+    text-align: center;
+  }
+  .getInTouchData p,
+  #getInTouchArticleTwo .getInTouchData p {
+    text-align: center;
+  }
+
   #messageUsName {
     flex-direction: column;
   }
@@ -225,261 +459,110 @@ html {
     margin-top: 1rem;
     border-radius: 7px;
   }
+
+  #choiceDifference {
+    height: 30rem;
+    background-image: linear-gradient(
+        rgba(40, 66, 101, 0.54),
+        rgba(40, 66, 101, 0.54)
+      ),
+      url("/img/contactFooterSM.jpg");
+    padding: 2rem;
+  }
 }
 
-/*
-.wrapper{
-    width: 80%;
-    margin: auto;
-}
-header{
-    background-color: #C1FFF2;
-    height: 980px;
-}
-nav{
-    position: fixed;
-    background-color: #026E64;
+@media (max-width: 390px) {
+  #contactHeader {
+    height: 40rem;
+    background-image: linear-gradient(
+        rgba(138, 248, 255, 0.71),
+        rgba(138, 248, 255, 0.71)
+      ),
+      url("/img/contactHeaderSM.jpg");
+    gap: 5rem;
+    justify-content: flex-end;
+    padding: 2rem 1rem;
+  }
+  #contactHeader strong {
+    transform: translateY(15rem);
+    font-size: 3rem;
+  }
+  #contactHeader p {
+    text-align: justify;
+    margin-bottom: 5rem;
+    transform: translateY(29rem);
+    line-height: 160%;
+  }
+  #getInTouch {
+    padding: 28rem 0 4rem;
+  }
+  #messageUs {
     width: 100%;
-    z-index: 10000;
+    padding: 5rem 1rem;
+  }
+  #choiceDifference {
+    height: 25rem;
+  }
+  #choiceDifference p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
-nav > .wrapper{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (max-width: 386px) {
+  #contactHeader strong {
+    transform: translateY(16rem);
+    font-size: 2.8rem;
+  }
+  #contactHeader p {
+    transform: translateY(32rem);
+  }
+  #getInTouch {
+    padding: 31rem 0 4rem;
+  }
+  #choiceDifference p {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+  }
 }
-.navMenu{
-    display: flex;
-    gap:  30px;
+@media (max-width: 323px) {
+  #contactHeader strong {
+    transform: translateY(17rem);
+    font-size: 2.6rem;
+  }
+  #contactHeader p {
+    transform: translateY(34rem);
+  }
+  #getInTouch {
+    padding: 33rem 0 4rem;
+  }
 }
-.navList{
-    list-style: none;
+@media (max-width: 300px) {
+  #contactHeader strong {
+    transform: translateY(20rem);
+  }
+  #contactHeader p {
+    transform: translateY(37rem);
+  }
+  #getInTouch {
+    padding: 36rem 0 4rem;
+  }
+  #getInTouchArticleTwo {
+    padding-bottom: 2rem;
+  }
 }
-.navLink{
-    text-decoration: none;
-    color: black;
+@media (max-width: 295px) {
+  #getInTouchFlex {
+    gap: 6.5rem;
+  }
 }
-.hamburger{
-    display: none;
+@media (max-width: 274px) {
+  #contactHeader strong {
+    transform: translateY(24rem);
+  }
+  #contactHeader p {
+    transform: translateY(40rem);
+  }
+  #getInTouch {
+    padding: 39rem 0 4rem;
+  }
 }
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-}
-.logo{
-    z-index: 1000;
-}
-
-.landingPage{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1224px;
-    margin: auto;
-    padding-top: 70px;
-}
-.bannerText{
-    z-index: 10;
-    padding-top: 180px;
-    width: 400px;
-}
-.bannerText > h1{
-    padding-bottom: 20px;
-}
-#text{
-    color: #026E64;
-}
-.btnSeeCourses{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 15px;
-    background-color: #6500CA;
-    color: white;
-    border-radius: 30px;
-    border: none;
-}
-.btnSeeCourses:hover{
-    cursor: pointer;
-}
-.heroBanner{
-    grid-column-start: 3;
-}
-
-
-.info{
-    background-color: #8FF8B6;
-    background-image: linear-gradient(to right, #8FF8B6, #6DF8A6);
-}
-.info > .wrapper{
-    display: grid;
-    grid-template-areas: 
-    'students graduates approval awards'
-    ;
-}
-.info > .wrapper div{
-    padding: 2em 0;
-}
-.students{
-    grid-area: students;
-}
-.graduates{
-    grid-area: graduates;
-}
-.approval{
-    grid-area: approval;
-}
-.awards{
-    grid-area: awards;
-}
-
-.vectors{
-    z-index: 1;
-}
-.vectors > img{
-    position: absolute;
-    opacity: 0.8;
-}
-#vec{
-    top: 59px;
-    right: 0;
-}
-#vec1{
-    top: 706px;
-    right: 0;
-}
-#vec2{
-    top: 347px;
-}
-@media only screen and (max-width: 1300px){
-    .heroBanner{
-        position: absolute;
-        right: 50px;
-    }
-    .heroBanner > img{
-        height: 100%;
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 900px){
-    header{
-        height: 750px;
-    }
-    nav{
-        justify-content: space-between;
-    }
-
-    .wrapper{
-        width: 90%;
-    }
-    .bannerText{
-        padding-top: 50px;
-        width: 200px;
-    }
-    .heroBanner > img{
-        height: 601.67px;
-        width: 600px;
-    }
-
-    #vec, #vec1{
-        width: 11%;
-    }
-    #vec1{
-        top: 500px;
-    }
-    #vec2{
-        width: 24%;
-    }
-}
-@media only screen and (max-width: 800px){
-    header{
-        height: 700px;
-    }
-    .heroBanner > img{
-        height: 401.67px;
-        width: 400px;
-    }
-}
-@media only screen and (max-width: 700px){
-    header{
-        height: 650px;
-    }
-    .hamburger{
-        display: block;
-        position: absolute;
-        z-index: 100;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45045deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45045deg);
-    }
-    .navMenu{
-        position: absolute;
-        right: -1000px;
-        top: 0;
-        gap: 5px;
-        padding: 58px 0 20px;
-        width: 40%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        flex-direction: column;
-        background-color: #026E64;
-        z-index: 100;
-    }
-    .navMenu.active{
-        right: 0;
-    }
-
-    .info > .wrapper{
-        grid-template-areas: 
-        'students graduates'
-        'approval awards'
-        ;
-    }
-}
-@media only screen and (max-width: 600px){
-    .bannerText{
-        padding-top: 0;
-        width: 200px;
-    }
-    .heroBanner {
-        right: 0;
-    }
-}
-@media only screen and (max-width: 600px){
-    .heroBanner > img{
-        height: 301.67px;
-        width: 300px;
-    }
-}
-@media only screen and (max-width: 400px){
-    header{
-        height: 575px;
-    }
-    .heroBanner > img{
-        height: 201.67px;
-        width: 200px;
-    }
-}
-@media only screen and (max-width: 300px){
-    .landingPage{
-        padding-top: 100px;
-    }
-    .heroBanner{
-        margin-top: -30px;
-    }
-
-    .info > .wrapper{
-        width: 95%;
-    }
-}
-*/

@@ -29,7 +29,9 @@
     width: 90%;
     margin: 8em auto;
 }
-
+h2 {
+    font-weight: 700 !important;
+}
 .package {
     display: flex;
     justify-content: space-around;

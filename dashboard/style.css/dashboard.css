@@ -136,3 +136,128 @@ body {
         height: 40em;
     }
 }
+
+.container {
+    width: 20em;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+input[type=radio] {
+    appearance: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    display: inline-grid;
+    place-content: center;
+    margin-right: 1em;
+}
+
+input[type=radio]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    background-color: #fff;
+    clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
+
+input[type=radio]:checked {
+    background-color: #FC7900;
+    border: 2px solid #FC7900;
+}
+
+.top-quiz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-quiz button {
+    background-color: transparent;
+    width: 27px;
+    height: 27px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 50%;
+
+}
+.top-quiz button:hover {
+    background-color: rgb(199, 0, 0);
+}
+.top-quiz button:hover i {
+    color: #ffffff;
+}
+.top-quiz button i {
+    color: rgb(126, 126, 126);
+}
+
+.quiz-container {
+    background-color: #BDF7FF;
+    border-top: 10px solid #284265;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.25);
+}
+.choice {
+    margin-left: 2em;
+}
+.btn-next {
+    text-align: end;
+}
+
+.btn-next button {
+    background-color: transparent;
+    width: 10em;
+    border: 3px solid #FC7900;
+    font-size: 1em;
+    padding: 5px 0;
+    color: #FC7900;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.btn-next button:hover {
+    background-color: #FC7900;
+    color: #ffffff;
+    transition: .3s all;
+}
+.quiz-box {
+    width: 30em;
+}
+.quiz-box h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: .8em;
+    padding-bottom: .6em;
+    border-bottom: 2px solid#a4b9b5;
+}
+.score {
+    color: #FC7900;
+}
+.top-quiz h3 {
+    font-size: 1.6em;
+}
+.quiz-main {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    border: none !important;
+}

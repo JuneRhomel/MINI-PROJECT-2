@@ -58,8 +58,21 @@
 
         .top-quiz button {
             background-color: transparent;
+            width: 27px;
+            height: 27px;
             border: none;
             font-size: 1.2em;
+            border-radius: 50%;
+
+        }
+        .top-quiz button:hover {
+            background-color: rgb(199, 0, 0);
+        }
+        .top-quiz button:hover i {
+            color: #ffffff;
+        }
+        .top-quiz button i {
+            color: rgb(126, 126, 126);
         }
 
         .quiz-container {
@@ -70,6 +83,7 @@
             flex-direction: column;
             gap: 2em;
             border-radius: 10px;
+            box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.25);
         }
 
         .btn-next {
@@ -77,20 +91,29 @@
         }
 
         .btn-next button {
-            background-color: #FC7900;
+            background-color: transparent;
             width: 10em;
-            border: 1px solid #FC7900;
+            border: 3px solid #FC7900;
             font-size: 1em;
             padding: 5px 0;
-            color: #ffffff;
+            color: #FC7900;
             font-weight: 700;
             border-radius: 20px;
+            transition: .3s ease-in-out;
+        }
+        .btn-next button:hover {
+            background-color: #FC7900;
+            color: #ffffff;
+            transition: .3s all;
         }
         .quiz-box {
             width: 30em;
         }
         .quiz-box h1 {
             text-align: center;
+        }
+        .score {
+            color: #FC7900;
         }
     </style>
 </head>
@@ -100,34 +123,24 @@
         <h1>Quiz Challenge</h1>
         <div class="quiz-container">
             <div class="top-quiz">
-                <h3>Score : <span>12</span></h3>
-                <button><i class="fa-solid fa-rotate-right"></i></button>
+                <h3>Score : <span class="score">0</span></h3>
+                <button  id="reset"><i class="fa-solid fa-rotate-right"></i></button>
             </div>
-            <div>
+            <div id="question">
                 <h1>What is the Sum of 1 +1 = ?</h1>
             </div>
             <div class="container">
-                <div class="choice">
-                    <label>
-                        <input type="radio" name="fruit"> Apple
-                    </label>
-                    <label>
-                        <input type="radio" name="fruit"> Banana
-                    </label>
-                    <label>
-                        <input type="radio" name="fruit"> Orange
-                    </label>
-                    <label>
-                        <input type="radio" name="fruit"> Avocado
-                    </label>
+                <div class="choice" id="choices">
                 </div>
+                <i id="no_ans"></i>
             </div>
-            <div class="btn-next">
-                <button>Next</button>
+            <div  class="btn-next">
+                <button id="nxt">Next</button>
             </div>
         </div>
     </div>
 
+    <script src="js/quiz.js"></script>
 </body>
 
 </html>

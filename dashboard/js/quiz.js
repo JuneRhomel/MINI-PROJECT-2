@@ -218,9 +218,9 @@ function outPut(questionArray, question, choices, btn){
         answers = [];
     
         for(letter in questionArray[i].answers){
-            answers.push(`<label>
+            answers.push(`<label class = "labelChoice">
             <input type="radio" name="question${i}" value="${letter}" id="ans_${i}${letter}">
-            ${letter} : ${questionArray[i].answers[letter]}
+            ${questionArray[i].answers[letter]}
             </label>`)
         }
     
@@ -268,9 +268,9 @@ function outPut(questionArray, question, choices, btn){
         scoreOut.innerHTML = score;
     
         for(letter in questionArray[i].answers){
-            answers.push(`<label>
+            answers.push(`<label class = "labelChoice">
             <input type="radio" name="question${i}" value="${letter}" id="ans_${i}${letter}">
-            ${letter} : ${questionArray[i].answers[letter]}
+            ${questionArray[i].answers[letter]}
             </label>`)
         }
     

@@ -73,7 +73,6 @@ body {
 }
 .main-lesson h4 {
     color: #FC7900;
-    margin-bottom: 1em;
     font-size: 1.2em;
 }
 .main-lesson {
@@ -133,7 +132,7 @@ body {
         width: 80%;
     }
     .vid-box iframe {
-        height: 40em;
+        height: 70vh;
     }
 }
 

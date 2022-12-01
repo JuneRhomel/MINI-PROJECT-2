@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body {
+    background-color: #E3FFF9;
+}
+.main-nav {
+    background-color: #284265 !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.layer {
+    fill: #E3FFF9 !important;
+}
+.navLink {
+    color: #ffffff !important;
+}
+.logotext {
+    color: #ffffff;
+}
+.fa-chevron-right,.fa-circle-plus {
+    color: #FC7900
+}
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 95%;
+    margin: 2em auto;
+}
+
+.leaderboard {
+    background: linear-gradient(89.81deg, #BDF7FF 0.16%, rgba(189, 247, 255, 0.26) 99.84%);
+    border-radius: 19px;
+    /* width: 408px;
+    height: 137px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em ;
+    align-items: center;
+    max-height: 10em;
+}
+.photo-graph {
+    width: 10em;
+}
+.photo-graph img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.font-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.font-box h3 {
+    color: #FC7900;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.font-box label {
+    font-size: 1em;
+    font-weight: 700;
+    color: #284265;
+}
+
+.font-box p {
+    font-size: .8em;
+}
+
+.font-box span {
+    color: #FC7900;
+}
+
+.top-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.Current-Course {
+    display: flex;
+    
+    gap: 2em;
+}
+
+.course-img {
+    padding: 1em;
+}
+.photo {
+    display: none;
+    background-color: #BDF7FF;
+    border-radius: 19px;
+}
+.course-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.Product-Analytics {
+    border: 6px solid #BDF7FF;
+    /* width: 30em; */
+    padding: 2em 1em;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.Product-Analytics h3 {
+    font-size: 1.7em;
+    color: #284265;
+}
+
+.Product-Analytics p {
+    font-size: .9em;
+    line-height: 169.52%;
+}
+
+.analytics-bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analytics-bot a {
+    color: #FC7900;
+    text-decoration: none;
+}
+
+.progress {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+.back {
+    display: block;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: #D9D9D9;
+}
+
+.front {
+    top: 0;
+    position: absolute;
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: #FC7900;
+}
+
+
+.circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #FC7900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    background-color: #BDF7FF;
+    border-radius: 50%;
+}
+
+.value-content {
+    position: relative;
+    font-size: 1.2em;
+    color: #284265;
+    font-weight: 700;
+}
+
+#calendar-container {
+    height: 284px;
+    background: #bdf7ff;
+    border-radius: 19px;
+    padding: 10px;
+}
+
+#calendar-container strong {
+    font-weight: 700;
+    font-size: 19px;
+    color: #284265;
+    text-align: center;
+    display: block;
+    padding: 14px 0 18px;
+    position: relative;
+}
+
+#calendar-container strong::before {
+    content: '<';
+    position: absolute;
+    left: 11px;
+    top: 9px;
+    color: #FC7900;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#calendar-container strong::after {
+    content: '>';
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    color: #FC7900;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#calendar-container span {
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 139.52%;
+    color: #000000;
+}
+
+#calendarWeek,
+#calendarNumber {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    row-gap: 10%;
+}
+
+#calendarWeek {
+    margin-bottom: 27px;
+}
+
+#calendarNumber span:first-child {
+    grid-column-start: 3;
+}
+
+.note-container {
+    background-color: #BDF7FF;
+    padding: 1em 2em;
+    height: auto;
+    border-radius: 19px;
+}
+.input-noteActive {
+    display: none !important;
+}
+.input-note {
+    display: flex;
+    margin-top: 1em;
+}
+.input-note input{
+    font-size: 1em;
+    padding: 10px 5px;
+    width: 85%;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.input-note button {
+    width: 15%;
+    border: none;
+    background-color: #FC7900;
+    border-radius: 4px;
+}
+#add {
+    transition: .3s all;
+}
+.rotate {
+    transform: rotate(45deg);
+    transition: .3s ease;
+}
+.input-note button i {
+    color: #ffffff;
+    font-size: 1.6em;
+    
+}
+
+.saveList {
+    background-color: #E3FFF9;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.saveList p {
+    width: 100%;
+    color: #284265;
+}
+.saveList button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3em;
+}
+.saveList button i {
+    color: #7c7c7c;
+}
+.saveList button i:hover {
+    color: #ff1f1f;
+}
+.save {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    max-height: 30em;
+    overflow: auto;
+}
+
+.note-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7c7c7c;
+}
+.note-head h3 {
+    color: #284265;
+}
+.note-head button {
+    background-color: transparent;
+    border: none;
+    color: #FC7900;
+    font-size: 2em;
+}
+.calender-note {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.subject {
+    padding: 1em;
+    background-color: #BDF7FF;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 20em;
+    height: auto;
+    scroll-snap-align: center;
+
+}
+.img-box  {
+    height: 124px;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 19px;
+}
+.sub-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-text h4 {
+    font-size: 1.2em;
+    color: #284265;
+}
+.des {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+    font-size: .9em;
+    color: #333333;
+}
+
+h2 {
+    color: #284265;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+.Recommended-subject {
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.main-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+.photo, .Product-Analytics{
+    width: 100%;
+    height: 18em;
+}
+@media only screen and (min-width: 770px) {
+    .top-dashboard {
+        flex-direction: row;
+    }
+    .photo {
+        display: block !important;
+    }
+
+    .calender-note {
+        flex-direction: row !important;
+    }
+    #calendar-container,.note-container {
+        width: 100%;
+    }
+    .Recommended-subject {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        
+    }
+    .subject {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .dashboard {
+        display: flex;
+        flex-direction: row;
+    }
+    .side-note-cal {
+        flex-basis: 30%;
+        margin-top: 2em;
+    }
+    .main-dashboard {
+        flex-basis: 70%;
+    }
+    .calender-note {
+        flex-direction: column !important;
+        height: 100%;
+    }
+    .dashboard {
+        gap: 1em;
+        max-width: 1760px;
+    }
+    .calendar-container {
+        flex-basis: 35%;
+    }
+    .note-container {
+        flex-basis: 65%;
+        flex-basis: 68%;
+        max-height: 41em;
+    }
+    .subject {
+        min-width: auto;
+        height: auto;
+    }
+} 
+@media only screen and (min-width: 1500px)  {
+    .side-note-cal {
+        flex-basis: 25%;
+    }
+    .main-dashboard {
+        flex-basis: 75%;
+    }
+}

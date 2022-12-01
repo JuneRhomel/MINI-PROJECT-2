@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+.teachers-container {
+    width: 90%;
+    margin: auto;
+    
+}
+.head-teachers {
+    text-align: center;
+    color: #333333;
+    font-size: 1em;
+}
+h2 {
+    font-size: 2em;
+}
+.teachers {
+    min-width: 10em;
+    max-width: 35em;
+    /* height: 25em; */
+    position: relative;
+    padding: 2em;
+    background: #BDF7FF;
+    filter: drop-shadow(4px 6px 15px rgba(0, 0, 0, 0.35));
+    transition: .3s ease-in-out;
+}
+.img-teachers {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    
+}
+.img-teachers img {
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+.teachers-text  h3{
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    color: #284265;
+    transition: .3s ease-in-out;
+}
+.teachers-text  p {
+    line-height: 164.52%;
+    font-size: 1.1em;
+    color: #696969;
+    transition: .3s ease-in-out;
+    margin-bottom: 2em;
+}
+.socail-teachers {
+    text-align: right;
+    font-size: 2em;
+    color: #696969;
+}
+.socail-teachers .fa-facebook {
+    margin-right: .5em;
+}
+.fa-facebook,
+.fa-twitter {
+    transition: .3s ease-in-out;
+}
+.fa-facebook:hover,
+.fa-twitter:hover {
+    transition: .3s all;
+    color: #FC7900;
+}
+.teachers:hover {
+    background-color: #284265;
+    filter: drop-shadow(4px 6px 15px rgba(40, 66, 101, 0.4));
+    transition: .3s all;
+}
+.teachers:hover h3{
+    color: #ffffff;
+}
+.teachers:hover p {
+    color: #ffffff;
+}
+.teachers:hover .socail-teachers {
+    color: #ffffff;
+}
+.teachers:hover .img-teachers img {
+    transform: scale(1.1);
+    transition: .3s all;
+}
+.teachers-flex {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+.left-position{
+    margin-top: 5em;
+}
+.main-teachers-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+@media only screen and (min-width: 1067px) {
+    .main-teachers-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 1220px;
+    margin: auto;
+    } 
+    .right-position {
+        margin-top: 20em;
+    }
+    .left-position {
+        margin-top: 0;
+    }
+    .main-teachers-flex {
+        height: auto;
+    }
+}
+
+
+
+.about-banner {
+    height: 20em;
+    overflow: hidden;
+    position: relative;
+}
+h1 {
+    font-size: 3em;
+    color: #FC7900;
+}
+.about-banner img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    position: fixed;
+}
+.about-banner .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 66, 101, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teachers-section {
+    padding-top: 10em;
+    background-color: #E3FFF9;
+}

@@ -348,7 +348,7 @@ header{
     .navMenu li:hover {
         background: none;
         border-left: none;
-        border-bottom: 3px solid #284265 ;
+        border-bottom: 3px solid #FC7900 ;
         transition: .3s all;
     }
     .navMenu li a {

@@ -45,6 +45,11 @@ let progress = setInterval(() => {
 
 }, speed)
 
+
+
+
+// note
+
 const add = document.querySelector("#add")
 const inputNoteBox = document.querySelector(".input-note")
 const inputTask = document.querySelector("#inputTask")
@@ -60,7 +65,6 @@ add.addEventListener("click", ()=> {
 
 inputTask.addEventListener("keyup", (e)=> {
     if (e.key == "Enter") {
-        console.log(inputTask.value)
         local()
     }
     
@@ -71,6 +75,7 @@ addBtn.addEventListener("click", () => {
 })
 
 const local = ()=> {
+
     let localItem = JSON.parse(localStorage.getItem('localItem'))
     if (localItem === null) {
         taskList = []
@@ -83,7 +88,6 @@ const local = ()=> {
 }
 
 const showlist = ()=> {
-
     let outPut = "";
     let taskListShow = document.querySelector(".save")
 
@@ -102,6 +106,7 @@ const showlist = ()=> {
     });
     taskListShow.innerHTML = outPut;
 }
+
 showlist()
 const deleteItem = (index) => {
     let localItem = JSON.parse(localStorage.getItem('localItem'))

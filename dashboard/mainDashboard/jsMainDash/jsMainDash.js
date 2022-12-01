@@ -44,3 +44,69 @@ let progress = setInterval(() => {
 
 
 }, speed)
+
+const add = document.querySelector("#add")
+const inputNoteBox = document.querySelector(".input-note")
+const inputTask = document.querySelector("#inputTask")
+const addBtn = document.querySelector("#add-btn")
+
+
+// display input
+add.addEventListener("click", ()=> {
+    add.classList.toggle("rotate")
+    inputNoteBox.classList.toggle("input-noteActive")
+})
+
+
+inputTask.addEventListener("keyup", (e)=> {
+    if (e.key == "Enter") {
+        console.log(inputTask.value)
+        local()
+    }
+    
+})
+
+addBtn.addEventListener("click", () => {
+    local()
+})
+
+const local = ()=> {
+    let localItem = JSON.parse(localStorage.getItem('localItem'))
+    if (localItem === null) {
+        taskList = []
+    }else{
+        taskList = localItem;
+    }
+    taskList.push(inputTask.value)
+    localStorage.setItem('localItem', JSON.stringify(taskList))
+    showlist()
+}
+
+const showlist = ()=> {
+
+    let outPut = "";
+    let taskListShow = document.querySelector(".save")
+
+    let localItem = JSON.parse(localStorage.getItem('localItem'))
+    if (localItem === null) {
+        taskList = []
+    }else{
+        taskList = localItem;
+    }
+    taskList.forEach((data, index) => {
+        outPut += `
+        <div class="saveList">
+            <p>${data}</p>
+            <button onClick="deleteItem(${index})"><i class="fa-solid fa-trash"></i></button>
+            </div>`
+    });
+    taskListShow.innerHTML = outPut;
+}
+showlist()
+const deleteItem = (index) => {
+    let localItem = JSON.parse(localStorage.getItem('localItem'))
+    console.log(index)
+    taskList.splice(index, 1)
+    localStorage.setItem('localItem', JSON.stringify(taskList))
+    showlist()
+}

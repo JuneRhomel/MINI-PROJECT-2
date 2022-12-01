@@ -23,13 +23,17 @@ body {
 .logotext {
     color: #ffffff;
 }
+.fa-chevron-right,.fa-circle-plus {
+    color: #FC7900
+}
+
 
 .dashboard {
     display: flex;
     flex-direction: column;
     gap: 2em;
     width: 95%;
-    margin: auto;
+    margin: 2em auto;
 }
 
 .leaderboard {
@@ -253,9 +257,74 @@ body {
 .note-container {
     background-color: #BDF7FF;
     padding: 1em 2em;
-    height: 20em;
+    height: auto;
     border-radius: 19px;
 }
+.input-noteActive {
+    display: none !important;
+}
+.input-note {
+    display: flex;
+    margin-top: 1em;
+}
+.input-note input{
+    font-size: 1em;
+    padding: 10px 5px;
+    width: 85%;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.input-note button {
+    width: 15%;
+    border: none;
+    background-color: #FC7900;
+    border-radius: 4px;
+}
+#add {
+    transition: .3s all;
+}
+.rotate {
+    transform: rotate(45deg);
+    transition: .3s ease;
+}
+.input-note button i {
+    color: #ffffff;
+    font-size: 1.6em;
+    
+}
+
+.saveList {
+    background-color: #E3FFF9;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.saveList p {
+    width: 100%;
+    color: #284265;
+}
+.saveList button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3em;
+}
+.saveList button i {
+    color: #7c7c7c;
+}
+.saveList button i:hover {
+    color: #ff1f1f;
+}
+.save {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    max-height: 30em;
+    overflow: auto;
+}
+
 .note-head {
     display: flex;
     justify-content: space-between;
@@ -378,16 +447,26 @@ h2 {
     }
     .dashboard {
         gap: 1em;
-        max-width: 1420px;
+        max-width: 1760px;
     }
     .calendar-container {
         flex-basis: 35%;
     }
     .note-container {
         flex-basis: 65%;
+        flex-basis: 68%;
+        max-height: 41em;
     }
     .subject {
         min-width: auto;
         height: auto;
     }
 } 
+@media only screen and (min-width: 1500px)  {
+    .side-note-cal {
+        flex-basis: 25%;
+    }
+    .main-dashboard {
+        flex-basis: 75%;
+    }
+}

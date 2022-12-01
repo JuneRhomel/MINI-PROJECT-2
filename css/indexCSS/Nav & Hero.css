@@ -10,22 +10,16 @@
     text-decoration: none;
 }
 html {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 body {
-    overflow-x: hidden;
-} 
-.main-nav {
-    overflow: hidden;
-    background-color: #284265 !important;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    position: sticky;
-    top: 0px;
-    background-color: #BDF7FF;
-    width: 100%;
-    z-index: 10000;
+    overflow-x: clip;
 }
 
+.main-nav {
+    background-color: #284265 !important;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .layer {
     fill: #E3FFF9 !important;
 }
@@ -45,10 +39,16 @@ body {
     height: 100%;
 }
 header{
-    overflow: hidden;
     background-color: #BDF7FF;
     height: 90vh;
     min-height: 500px;
+}
+.main-nav{
+    position: sticky;
+    top: 0;
+    background-color: #BDF7FF;
+    width: 100%;
+    z-index: 10000;
 }
 .nav-bg {
     background-color: #284265 !important;
@@ -133,16 +133,22 @@ header{
 .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45045deg);
 }
+.burger-toggel{
+    transform: translateX(0) !important; 
+    transition: .3s all;
+    opacity: 0;
+}
+
 .navMenu{
     transform: translateX(100%); 
-    position: fixed;
+    position: absolute;
     opacity: 1;
     top: -40px;
     right: 0;
     gap: 5px;
     padding: 98px 0 20px;
     width: 70%;
-    height: 200vh;
+    height: 100vh;
     text-align: center;
     transition: 0.3s;
     margin-top: 2em;
@@ -152,11 +158,6 @@ header{
     z-index: -1;
     transition: .3s ease-in-out;
 }
-.burger-toggel{
-    transform: translateX(0) !important; 
-    transition: .3s all;
-}
-
 .navMenu.active{
     right: 0;
 }
@@ -174,7 +175,6 @@ header{
     .navMenu a  {
         padding: 1em 10px;
     }
-    
 }
 
 .navMenu a:hover {
@@ -336,7 +336,6 @@ header{
     }
     #vec2{
         width: 24%;
-        z-index: -1;
     }
 }
 @media only screen and (min-width: 1100px) {

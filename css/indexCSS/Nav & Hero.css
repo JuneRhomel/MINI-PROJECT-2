@@ -207,7 +207,7 @@ header{
     font-size: 1.3em;
 }
 #text{
-    color: #284265;
+    color: #FC7900;
 }
 .btnSeeCourses{
     margin-top: 2em;
@@ -236,9 +236,8 @@ header{
     object-fit: contain;
 }
 
-.info{
-    background-color: #8FF8B6;
-    background-color: #284265;
+.bg-color{
+    background-color: #284265 !important;
 }
 .info > .wrapper{
     display: grid;

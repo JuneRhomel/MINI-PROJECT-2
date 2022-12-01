@@ -38,7 +38,7 @@ body {
 }
 .video-course {
     width: 100%;
-    
+    border-radius: 19px;
     padding: 1em;
     border: 3px solid #284265;
 }
@@ -58,6 +58,14 @@ body {
 .lesson {
     height: 100%;
     border: 3px solid #284265;
+    border-radius: 19px;
+}
+.curr-less {
+    order: -1;
+}
+.lesson-box {
+    display: flex;
+    flex-direction: column;
 }
 .aside-head {
     display: flex;

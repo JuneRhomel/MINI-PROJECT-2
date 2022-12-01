@@ -64,6 +64,7 @@ add.addEventListener("click", ()=> {
 
 
 inputTask.addEventListener("keyup", (e)=> {
+    // For Enter Key keyboard
     if (e.key == "Enter") {
         local()
     }
@@ -71,13 +72,15 @@ inputTask.addEventListener("keyup", (e)=> {
 })
 
 addBtn.addEventListener("click", () => {
+    // for Btn
     local()
 })
 
 const local = ()=> {
-
+    //set local storage 
     let localItem = JSON.parse(localStorage.getItem('localItem'))
     if (localItem === null) {
+        //cheack if local storage is null if true store in null array else taskList store localItem
         taskList = []
     }else{
         taskList = localItem;

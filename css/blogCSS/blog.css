@@ -29,7 +29,7 @@
     overflow: hidden;
 }
 h1 {
-    font-size: 3em !important;
+    font-size: 2em !important;
     color: #FC7900;
     font-weight: 700 !important;
 }
@@ -67,9 +67,10 @@ h1 {
     justify-content: center;
 }
 .text p {
-    margin-top: 1em;
+    margin-top: .2em !important; 
+    font-weight: 400;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 166.02%;
 }
 

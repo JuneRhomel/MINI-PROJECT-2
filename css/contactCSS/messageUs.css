@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,42 +7,90 @@ html {
   font-family: "Inter", sans-serif;
   color: #333333;
 }
-.contactHeader-container {
-  background-image: linear-gradient(
-    rgba(138, 248, 255, 0.71),
-    rgba(138, 248, 255, 0.71)
-  );
-  font-size: 1.6rem;
-  margin: 0 auto;
-  padding-top: 8.5rem;
+.main-nav {
+  background-color: #284265 !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-#contactHeader {
+.layer {
+  fill: #E3FFF9 !important;
+}
+.navLink {
+  color: #ffffff !important;
+}
+.logotext {
+  color: #ffffff;
+}
+.active-nav-a {
+  color: #FC7900 !important;
+}
+
+.login_container{
+  background-color: #E3FFF9;
+  padding: 100px 50px;
+}
+
+
+.img-bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  background: rgba(40, 66, 101, 0.54);
+  z-index: -2;
+}
+.overlay {
+  z-index: -1;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 66, 101, 0.54);
+}
+.img-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.bg-img-head {
+  position: relative;
+  height: 20em;
+}
+.text-head {
+  width: 95%;
+  max-width: 45em;
+  height: 100%;
+  margin: auto;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
-  height: 40rem;
-  background-image: linear-gradient(
-      rgba(138, 248, 255, 0.71),
-      rgba(138, 248, 255, 0.71)
-    ),
-    url("/img/contactHeader.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
+  text-align: center;
+  align-items: center;
 }
+.text-head h1 {
+  color: #FC7900;
+  font-weight: 700;
+  font-size: 2em;
+}
+.text-head p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 34.74px;
+}
+
+
+
+
 #contactHeader strong {
-  color: #6500ca;
-  font-size: 3.7rem;
+  color: #FC7900;
+  font-size: 1.7rem;
   text-align: center;
 }
 #contactHeader p {
   max-width: 74rem;
   min-width: 10rem;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 .getInTouch-container {
   background: #e3fff9;
@@ -54,19 +99,19 @@ html {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 7.5rem 1rem 10rem;
+  padding: 2em 0;
 }
 #getInTouch h2 {
   text-transform: uppercase;
-  font-size: 2.6rem;
+  font-size: 2em;
   text-align: center;
-  color: #0f7d7d;
-  margin-bottom: 5rem;
+  color: #284265;
+  margin-bottom: 3rem;
 }
 #getInTouchFlex {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
-  gap: 7rem;
+  gap: 1rem;
 }
 #getInTouchFlex article {
   flex: 0 0 calc(100% / 3);
@@ -85,21 +130,21 @@ html {
   text-align: center;
 }
 .getInTouchIcon {
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  background: #0f7d7d;
+  background: #284265;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .getInTouchIcon i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
 }
 .getInTouchIconName {
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .getInTouchData {
   height: 7rem;
@@ -107,13 +152,13 @@ html {
 }
 .getInTouchData h3 {
   text-align: center;
-  color: #026e64;
-  font-size: 1.8rem;
+  color: #284265;
+  font-size: 1.3em;
   font-weight: 500;
 }
 .getInTouchData p {
   margin: 1.5rem auto;
-  font-size: 1.6rem;
+  font-size: 1rem;
   /* width: 20rem; */
   text-align: center;
   font-weight: 400;
@@ -123,31 +168,31 @@ html {
 }
 
 .messageUs-container {
-  background: #c1fff2;
-  font-size: 1.6rem;
+  background: #BDF7FF;
+  font-size: 1rem;
   margin: 0 auto;
+  padding: 4em 0;
 }
 #messageUs {
   width: 90%;
   max-width: 1400px;
   margin: auto;
   display: flex;
-  padding: 7.5rem 0;
-  gap: 3rem;
+  gap: 1em;
 }
 #messageUsText {
   flex: 0 0 45%;
-  max-width: 45%;
+  /* max-width: 45%; */
 }
 #messageUsText h2 {
-  font-size: 2.6rem;
-  color: #026e64;
-  margin-bottom: 5rem;
+  font-size:2em;
+  color: #284265;
+  margin-bottom: 2rem;
 }
 #messageUsText p {
   line-height: 189.52%;
-  max-width: 41.8rem;
-  font-size: 1.8rem;
+  /* max-width: 41.8rem; */
+  font-size: 1.2em;
   text-align: justify;
 }
 #messageUsForm {
@@ -156,17 +201,16 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding-right: 4rem;
 }
 #messageUsForm :is(input, textarea) {
   width: 100%;
   height: 3rem;
-  padding: 2rem 1rem;
-  margin-top: 0.8rem;
+  padding: 1rem 1rem;
+  margin-top: .8em;
   background: #fff;
   outline: none;
   border: none;
-  font-size: 1.6rem;
+  font-size: 1em;
 }
 #messageUsName {
   display: flex;
@@ -185,19 +229,20 @@ html {
 #messageUsForm button {
   display: block;
   width: 12rem;
-  height: 4rem;
+  height: 3rem;
   margin-left: auto;
-  background: #6500ca;
-  box-shadow: 2px 6px 8px -2px rgba(101, 0, 202, 0.47);
+  background: #FC7900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1em;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 .map-container {
   margin: 0 auto;
-  background: #0f7d7d;
+  background: #284265;
 }
 #map {
   margin: auto;
@@ -209,29 +254,7 @@ html {
   width: 100%;
   height: 30rem;
 }
-.choiceDifference-container {
-  background-image: linear-gradient(
-    rgba(40, 66, 101, 0.54),
-    rgba(40, 66, 101, 0.54)
-  );
-  font-size: 1.6rem;
-  margin: 0 auto;
-}
-#choiceDifference {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 27rem;
-  background-image: linear-gradient(
-      rgba(40, 66, 101, 0.54),
-      rgba(40, 66, 101, 0.54)
-    ),
-    url("/img/contactFooter.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 2rem;
-}
+
 #choiceDifference p {
   color: #fc7900;
   font-weight: 700;
@@ -239,23 +262,14 @@ html {
   line-height: 3.6rem;
   text-align: center;
 }
-@media (min-width: 1500px) {
-  #messageUs {
-    padding: 7.5rem 12rem;
-  }
-}
+
 @media (min-width: 1100px) {
   .getInTouchData {
     height: 8rem;
-    width: 30rem;
   }
-  #messageUs {
-    padding: 7.5rem 4rem;
-    gap: 3rem;
-  }
-  #messageUsText p {
+  /* #messageUsText p {
     max-width: 55rem;
-  }
+  } */
 }
 @media (max-width: 1071px) {
   .getInTouchData {
@@ -295,7 +309,6 @@ html {
   }
 
   #messageUs {
-    padding: 5rem 0;
     grid-template: 3rem;
   }
   #messageUsText h2 {
@@ -498,7 +511,6 @@ html {
   }
   #messageUs {
     width: 100%;
-    padding: 5rem 1rem;
   }
   #choiceDifference {
     height: 25rem;

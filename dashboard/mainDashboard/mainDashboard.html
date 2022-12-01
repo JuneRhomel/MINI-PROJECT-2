@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/dashboard/mainDashboard/style.css">
     <link rel="stylesheet" href="/css/indexCSS/Nav & Hero.css">
     <link rel="stylesheet" href="/css/indexCSS/Our Pricing.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/21f9873db8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -68,8 +69,8 @@
             </div>
         </div>
     </nav>
-    <section class="dashboard">
-        <main class="main-dashboard">
+    <section class="dashboard" >
+        <main class="main-dashboard" data-aos="fade-right" >
             <div>
                 <h2>Dashboard</h2>
             <div class="top-dashboard">
@@ -178,7 +179,7 @@
                 </div>
             </div>
         </main>
-        <aside class="side-note-cal">
+        <aside class="side-note-cal" data-aos="fade-left">
             <div class="calender-note">
                 <div id="calendar-container">
                     <strong>November</strong>
@@ -311,6 +312,10 @@
 
     <script src="/js/XITO.js"></script>
     <script src="/dashboard/mainDashboard/jsMainDash/jsMainDash.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

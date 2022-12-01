@@ -40,7 +40,7 @@ body {
 }
 header{
     background-color: #BDF7FF;
-    height: 90vh;
+    height: 100vh;
     min-height: 500px;
 }
 .main-nav{
@@ -87,6 +87,9 @@ header{
 }
 .main-nav-scroll {
     background-color: #284265;
+}
+.img-fluid {
+    object-fit: cover;
 }
 
 .layer {
